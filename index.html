@@ -270,70 +270,157 @@
             </div>
         </div>
     </section>
-
+ <hr>
     <section id="registration" class="section registration">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h3 class="section-title">Registration &amp; Pricing</h3>
+                    <h3 class="section-title">Registration Form</h3>
                 </div>
             </div>
 
-            <form action="#" id="registration-form">
-                <div class="row">
-                    <div class="col-md-12" id="registration-msg" style="display:none;">
-                        <div class="alert"></div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="First Name" id="fname" name="fname" required>
-                        </div>
+            <form id="login-form" action="#" method="post" role="form" style="display: block;">
 
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Last Name" id="lname" name="lname" required>
-                        </div>
+            	<div class="col-md-12 form-line">
+            	<div class="form-group">
+            			  				<label for="exampleInputUsername">Full Name</label>
+            					    	<input type="text" class="form-control" name="FullName" placeholder=" Full Name" required>
+            				  		</div>	</div>
+            	<div class="col-md-6 form-line">
+            	<div class="form-group">
+            			  				<label for="exampleInputUsername">Gender</label>
+            					    	<input type="text" class="form-control" name="gender" placeholder="Gender" required>
+            				  		</div>	</div>
+            						<div class="col-md-6 form-line">
+            	<div class="form-group">
+            			  				<label for="exampleInputUsername">Org Name</label>
+            					    	<input type="text" class="form-control" name="org" placeholder=" Org Name">
+            				  		</div>	</div>
+            <div class="col-md-12 form-line">
+            	<div class="form-group">
+            			  				<label for="exampleInputUsername">Address</label>
+            					    	<textarea type="text" class="form-control" name="address" placeholder="Address"></textarea>
+            				  		</div>	</div>
+            <div class="col-md-6 form-line">
+            	<div class="form-group">
+            			  				<label for="exampleInputUsername">MobileNo</label>
+            					    	<input type="text" class="form-control" name="mobile" placeholder="Mobile No">
+            				  		</div>	</div>
+            						<div class="col-md-6 form-line">
+            	<div class="form-group">
+            			  				<label for="exampleInputUsername">Email</label>
+            					    	<input type="text" class="form-control" name="email" placeholder="Email">
+            				  		</div>	</div>
+            						<div class="col-md-12 form-line">
+            	<div class="form-group">
+            			  				<label for="exampleInputUsername">Person to be contacted in emergency (Name, Relation & Mobile no.)</label>
+            					    	<textarea type="text" class="form-control" name="person" placeholder="Name, Relation, MobileNo"></textarea>
+            				  		</div>	</div>
+            <div class="col-md-6 form-line">
+            	<div class="form-group">
+            			  				<label class="checkbox-inline">
+                  <input type="checkbox" value="teacher">Teacher
+                </label>
+            				  		</div>	</div>
+            						<div class="col-md-6 form-line">
+            	<div class="form-group">
+            			  				<label class="checkbox-inline">
+                  <input type="checkbox" value="student">Student
+                </label>
+            				  		</div>	</div>
 
-                        <div class="form-group">
-                            <input type="email" class="form-control" placeholder="Email" id="email" name="email" required>
-                        </div>
+            <div class="col-md-3 form-line">
+            	<div class="form-group">
+            			  				<label>Course of study:
+                </label>
+            				  		</div>	</div>
+            						<div class="col-md-3 form-line">
+            	<div class="form-group">
+            			  				<label class="checkbox-inline">
+                  <input type="checkbox" value="btech">B.Tech
+                </label>
+            				  		</div>	</div>
+            						<div class="col-md-3 form-line">
+            	<div class="form-group">
+            			  				<label class="checkbox-inline">
+                  <input type="checkbox" value="msc">M. Sc
+                </label>
+            				  		</div>	</div>
+            						<div class="col-md-3 form-line">
+            	<div class="form-group">
+            			  				<label class="checkbox-inline">
+                  <input type="checkbox" value="phd">PhD
+                </label>
+            				  		</div>	</div>
+            						<div class="col-md-12 form-line">
+            <label>Academic record (If candidate is in final year of B. Tech / M.Sc/PhD)</label>
 
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Phone" id="cell" name="cell" required>
-                        </div>
-                    </div>
+            		<table class="table table-bordered table-responsive">
+                     <thead>
+                        <tr>
+                            <th>Last exam passed</th>
+            				<th>Grade</th>
+            				<th>Rank in class</th>
+            				<th>Name of University</th>
+                        </tr>
+            			</thead>
+            			<td><input type="text" name="exam" class="form-control" placeholder="Last exam passed"></td>
+                         <td><input type="text" name="grade" class="form-control" placeholder="Grade"></td>
+                         <td><input type="text" name="rank" class="form-control" placeholder="Rank in class"></td>
+            			 <td><input type="text" name="university" class="form-control" placeholder="University"></td>
 
-                    <div class="col-sm-6">
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Address" id="address" name="address" required>
-                        </div>
+            			<tbody>
+                <tr>
 
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Zip Code" id="zip" name="zip" required>
-                        </div>
+            	</tr>
+            </table>	</div>
+            <div class="col-md-12 form-line">
+            <label>Discipline:</label>	</div>
+            <div class="col-md-3 form-line">
+            	<div class="form-group">
+            			  				<label class="checkbox-inline">
+                  <input type="checkbox" value="physics">Physics
+                </label>
+            				  		</div>	</div>
+            						<div class="col-md-3 form-line">
+            	<div class="form-group">
+            			  				<label class="checkbox-inline">
+                  <input type="checkbox" value="chemistry">Chemistry
+                </label>
+            				  		</div>	</div>
+            						<div class="col-md-3 form-line">
+            	<div class="form-group">
+            			  				<label class="checkbox-inline">
+                  <input type="checkbox" value="maths">Mathemetics
+                </label>
+            				  		</div>	</div>
+            <div class="col-md-3 form-line">
+            	<div class="form-group">
+            			  				<label class="checkbox-inline">
+                  <input type="checkbox" value="teacher">Bilogy
+                </label>
+            				  		</div>	</div><div class="col-md-3 form-line">
+            	<div class="form-group">
+            			  				<label class="checkbox-inline">
+                  <input type="checkbox" value="teacher">B.Tech
+                </label>
+            				  		</div>	</div><div class="col-md-3 form-line">
+            	<div class="form-group">
+            			  				<label class="checkbox-inline">
+                  <input type="checkbox" value="teacher">B.Tech
+                </label>
+            				  		</div>	</div>
+            						<div class="col-md-3 form-line">
+            	<div class="form-group">
+            			  				<label class="checkbox-inline">
+                  <input type="checkbox" value="teacher">B.Tech
+                </label>
+            				  		</div>	</div>
+            <div class="col-md-12 form-line">
+            <input type="submit" name="submit" value="Register" class="pull-left">
+            </div>
 
-                        <div class="form-group">
-                            <select class="form-control" name="city" id="city" required>
-                                <option readonly>City</option>
-                                <option>City Name 1</option>
-                                <option>City Name 2</option>
-                                <option>City Name 3</option>
-                                <option>City Name 4</option>
-                            </select>
-                        </div>
 
-                        <div class="form-group">
-                            <select class="form-control" name="program" id="program" required>
-                                <option readonly>Select Your Program</option>
-                                <option>Program Name 1</option>
-                                <option>Program Name 2</option>
-                                <option>Program Name 3</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-                <div class="text-center mt20">
-                    <button type="submit" class="btn btn-black" id="registration-submit-btn">Submit</button>
-                </div>
             </form>
         </div>
     </section>
