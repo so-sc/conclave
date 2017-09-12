@@ -11,6 +11,11 @@
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="bower_components/ionicons/css/ionicons.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style1.css">
+
+       <!-- Flat icon -->
+    <link rel="stylesheet" type="text/css" href="assets/css/flaticon.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
 </head>
 <body data-spy="scroll" data-target="#site-nav">
     <nav id="site-nav" class="navbar navbar-fixed-top navbar-custom">
@@ -270,70 +275,159 @@
             </div>
         </div>
     </section>
-
-    <section id="registration" class="section registration">
+ <hr>
+    <section id="registration" class="section registration" style="
+    background: #f1f1f1;
+">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h3 class="section-title">Registration &amp; Pricing</h3>
+                    <h3 class="section-title">Registration Form</h3>
                 </div>
             </div>
 
-            <form action="#" id="registration-form">
-                <div class="row">
-                    <div class="col-md-12" id="registration-msg" style="display:none;">
-                        <div class="alert"></div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="First Name" id="fname" name="fname" required>
-                        </div>
+            <form id="login-form" action="#" method="post" role="form" style="display: block;">
 
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Last Name" id="lname" name="lname" required>
-                        </div>
+            	<div class="col-md-12 form-line">
+            	<div class="form-group">
+            			  				<label for="exampleInputUsername">Full Name</label>
+            					    	<input type="text" class="form-control" name="FullName" placeholder=" Full Name" required>
+            				  		</div>	</div>
+            	<div class="col-md-6 form-line">
+            	<div class="form-group">
+            			  				<label for="exampleInputUsername">Gender</label>
+            					    	<input type="text" class="form-control" name="gender" placeholder="Gender" required>
+            				  		</div>	</div>
+            						<div class="col-md-6 form-line">
+            	<div class="form-group">
+            			  				<label for="exampleInputUsername">Org Name</label>
+            					    	<input type="text" class="form-control" name="org" placeholder=" Org Name">
+            				  		</div>	</div>
+            <div class="col-md-12 form-line">
+            	<div class="form-group">
+            			  				<label for="exampleInputUsername">Address</label>
+            					    	<textarea type="text" class="form-control" name="address" placeholder="Address"></textarea>
+            				  		</div>	</div>
+            <div class="col-md-6 form-line">
+            	<div class="form-group">
+            			  				<label for="exampleInputUsername">MobileNo</label>
+            					    	<input type="text" class="form-control" name="mobile" placeholder="Mobile No">
+            				  		</div>	</div>
+            						<div class="col-md-6 form-line">
+            	<div class="form-group">
+            			  				<label for="exampleInputUsername">Email</label>
+            					    	<input type="text" class="form-control" name="email" placeholder="Email">
+            				  		</div>	</div>
+            						<div class="col-md-12 form-line">
+            	<div class="form-group">
+            			  				<label for="exampleInputUsername">Person to be contacted in emergency (Name, Relation & Mobile no.)</label>
+            					    	<textarea type="text" class="form-control" name="person" placeholder="Name, Relation, MobileNo"></textarea>
+            				  		</div>	</div>
+            <div class="col-md-6 form-line">
+            	<div class="form-group">
+            			  				<label class="checkbox-inline">
+                  <input type="checkbox" value="teacher">Teacher
+                </label>
+            				  		</div>	</div>
+            						<div class="col-md-6 form-line">
+            	<div class="form-group">
+            			  				<label class="checkbox-inline">
+                  <input type="checkbox" value="student">Student
+                </label>
+            				  		</div>	</div>
 
-                        <div class="form-group">
-                            <input type="email" class="form-control" placeholder="Email" id="email" name="email" required>
-                        </div>
+            <div class="col-md-3 form-line">
+            	<div class="form-group">
+            			  				<label>Course of study:
+                </label>
+            				  		</div>	</div>
+            						<div class="col-md-3 form-line">
+            	<div class="form-group">
+            			  				<label class="checkbox-inline">
+                  <input type="checkbox" value="btech">B.Tech
+                </label>
+            				  		</div>	</div>
+            						<div class="col-md-3 form-line">
+            	<div class="form-group">
+            			  				<label class="checkbox-inline">
+                  <input type="checkbox" value="msc">M. Sc
+                </label>
+            				  		</div>	</div>
+            						<div class="col-md-3 form-line">
+            	<div class="form-group">
+            			  				<label class="checkbox-inline">
+                  <input type="checkbox" value="phd">PhD
+                </label>
+            				  		</div>	</div>
+            						<div class="col-md-12 form-line">
+            <label>Academic record (If candidate is in final year of B. Tech / M.Sc/PhD)</label>
 
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Phone" id="cell" name="cell" required>
-                        </div>
-                    </div>
+            		<table class="table table-bordered table-responsive">
+                     <thead>
+                        <tr>
+                            <th>Last exam passed</th>
+            				<th>Grade</th>
+            				<th>Rank in class</th>
+            				<th>Name of University</th>
+                        </tr>
+            			</thead>
+            			<td><input type="text" name="exam" class="form-control" placeholder="Last exam passed"></td>
+                         <td><input type="text" name="grade" class="form-control" placeholder="Grade"></td>
+                         <td><input type="text" name="rank" class="form-control" placeholder="Rank in class"></td>
+            			 <td><input type="text" name="university" class="form-control" placeholder="University"></td>
 
-                    <div class="col-sm-6">
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Address" id="address" name="address" required>
-                        </div>
+            			<tbody>
+                <tr>
 
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Zip Code" id="zip" name="zip" required>
-                        </div>
+            	</tr>
+            </table>	</div>
+            <div class="col-md-12 form-line">
+            <label>Discipline:</label>	</div>
+            <div class="col-md-3 form-line">
+            	<div class="form-group">
+            			  				<label class="checkbox-inline">
+                  <input type="checkbox" value="physics">Physics
+                </label>
+            				  		</div>	</div>
+            						<div class="col-md-3 form-line">
+            	<div class="form-group">
+            			  				<label class="checkbox-inline">
+                  <input type="checkbox" value="chemistry">Chemistry
+                </label>
+            				  		</div>	</div>
+            						<div class="col-md-3 form-line">
+            	<div class="form-group">
+            			  				<label class="checkbox-inline">
+                  <input type="checkbox" value="maths">Mathemetics
+                </label>
+            				  		</div>	</div>
+            <div class="col-md-3 form-line">
+            	<div class="form-group">
+            			  				<label class="checkbox-inline">
+                  <input type="checkbox" value="teacher">Bilogy
+                </label>
+            				  		</div>	</div><div class="col-md-3 form-line">
+            	<div class="form-group">
+            			  				<label class="checkbox-inline">
+                  <input type="checkbox" value="teacher">B.Tech
+                </label>
+            				  		</div>	</div><div class="col-md-3 form-line">
+            	<div class="form-group">
+            			  				<label class="checkbox-inline">
+                  <input type="checkbox" value="teacher">B.Tech
+                </label>
+            				  		</div>	</div>
+            						<div class="col-md-3 form-line">
+            	<div class="form-group">
+            			  				<label class="checkbox-inline">
+                  <input type="checkbox" value="teacher">B.Tech
+                </label>
+            				  		</div>	</div>
+            <div class="col-md-12 form-line">
+            <input type="submit" name="submit" value="Register" class="pull-left">
+            </div>
 
-                        <div class="form-group">
-                            <select class="form-control" name="city" id="city" required>
-                                <option readonly>City</option>
-                                <option>City Name 1</option>
-                                <option>City Name 2</option>
-                                <option>City Name 3</option>
-                                <option>City Name 4</option>
-                            </select>
-                        </div>
 
-                        <div class="form-group">
-                            <select class="form-control" name="program" id="program" required>
-                                <option readonly>Select Your Program</option>
-                                <option>Program Name 1</option>
-                                <option>Program Name 2</option>
-                                <option>Program Name 3</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-                <div class="text-center mt20">
-                    <button type="submit" class="btn btn-black" id="registration-submit-btn">Submit</button>
-                </div>
             </form>
         </div>
     </section>
@@ -359,7 +453,7 @@
                     <h3 class="section-title">Event Schedule</h3>
                 </div>
             </div>
-            <div class="row">
+            <!-- <div class="row">
                 <div class="col-md-4 col-sm-6">
                     <div class="schedule-box">
                         <div class="time">
@@ -387,7 +481,439 @@
                         <p>Mustafizur Khan, SD Asia</p>
                     </div>
                 </div>
+            </div> -->
+
+                <!-- Schedules start here -->
+    <section id="schedules" class="schedules padding-120">
+      <div class="container">
+        <div class="section-header text-center">
+          <h3>Event Schedules</h3>
+          <p><em>Exhibition &amp; Astronomy events  (star gazing and planetarium) will be open from 05.00 to 11.00 hr from day1 to day4  </em></p>
+        </div>
+
+        <div class="schedule-tabs">
+
+          <!-- Nav tabs -->
+          <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="http://www.ecell-sahyadri.com/ScienceConclave2/#day-one" aria-controls="day-one" role="tab" data-toggle="tab">
+              Day-01
+              <span>08 january 2018</span>
+            </a></li>
+            <li role="presentation"><a href="http://www.ecell-sahyadri.com/ScienceConclave2/#day-two" aria-controls="day-two" role="tab" data-toggle="tab">
+              Day-02
+              <span>09 january 2018</span>
+            </a></li>
+            <li role="presentation"><a href="http://www.ecell-sahyadri.com/ScienceConclave2/#day-three" aria-controls="day-three" role="tab" data-toggle="tab">
+              Day-03
+              <span>10 january 2018</span>
+            </a></li>
+            <li role="presentation"><a href="http://www.ecell-sahyadri.com/ScienceConclave2/#day-four" aria-controls="day-four" role="tab" data-toggle="tab">
+              Day-04
+              <span>11 january 2018</span>
+            </a></li>
+            <li role="presentation"><a href="http://www.ecell-sahyadri.com/ScienceConclave2/#day-five" aria-controls="day-five" role="tab" data-toggle="tab">
+              Day-05
+              <span>12 january 2018</span>
+            </a></li>
+          </ul>
+
+                      <td class="session"><span><i class="fa fa-list-alt" aria-hidden="true"></i></span>Lecture for University Students(LH1 – SS1)<br>Lecture for School Children (LH2 – SS2) </td>
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="day-one">
+              <div class="schedule-table table-responsive">
+                <table>
+                  <thead>
+                    <tr>
+                      <th class="time">Time</th>
+                      <th class="session">Session</th>
+                      <th class="spekers">Speakers</th>
+                      <th class="venue">Venue</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="time"><span><i class="fa fa-clock-o" aria-hidden="true"></i></span>09:00am-10:00am</td>
+                      <td class="session"><span><i class="fa fa-list-alt" aria-hidden="true"></i></span> --- </td>
+                      <td class="spekers"><span><i class="fa fa-microphone" aria-hidden="true"></i></span></td>
+                      <td class="venue"><span><i class="fa fa-home" aria-hidden="true"></i></span></td>
+                    </tr>
+                    <tr>
+                      <td class="time"><span><i class="fa fa-clock-o" aria-hidden="true"></i></span>10:10am-11:10am</td>
+                      <td class="session"><span><i class="fa fa-list-alt" aria-hidden="true"></i></span> --- </td>
+                      <td class="spekers"><span><i class="fa fa-microphone" aria-hidden="true"></i></span></td>
+                      <td class="venue"><span><i class="fa fa-home" aria-hidden="true"></i></span></td>
+                    </tr>
+                     <tr>
+                      <td class="time"><span><i class="fa fa-clock-o" aria-hidden="true"></i></span>11:10am-11:30am</td>
+                      <td class="session"><span><i class="fa fa-list-alt" aria-hidden="true"></i></span> Tea Break </td>
+                       <td class="spekers"></td>
+                      <td class="venue"></td>
+                      
+                    </tr>
+                    
+                     <tr>
+                      <td class="time"><span><i class="fa fa-clock-o" aria-hidden="true"></i></span>11:30am-12:30am</td>
+                      <td class="session"><span><i class="fa fa-list-alt" aria-hidden="true"></i></span>Inaugural Session</td>
+                      <td class="spekers"><span><i class="fa fa-microphone" aria-hidden="true"></i></span></td>
+                      <td class="venue"><span><i class="fa fa-home" aria-hidden="true"></i></span></td>
+                    </tr>
+                    <tr>
+                      <td class="time"><span><i class="fa fa-clock-o" aria-hidden="true"></i></span>12:40pm-01:40pm</td>
+                      <td class="session"><span><i class="fa fa-list-alt" aria-hidden="true"></i></span>Inaugural Session</td>
+                      <td class="spekers"><span><i class="fa fa-microphone" aria-hidden="true"></i></span></td>
+                      <td class="venue"><span><i class="fa fa-home" aria-hidden="true"></i></span></td>
+                    </tr>
+                    <tr>
+                      <td class="time"><span><i class="fa fa-clock-o" aria-hidden="true"></i></span>01:40am-02:40am</td>
+                      <td class="session"><span><i class="fa fa-list-alt" aria-hidden="true"></i></span> Lunch Break </td>
+                       <td class="spekers"></td>
+                      <td class="venue"></td>
+                      
+                    </tr>
+                    <tr>
+                      <td class="time"><span><i class="fa fa-clock-o" aria-hidden="true"></i></span>02:40am-04:00pm</td>
+                      <td class="session"><span><i class="fa fa-list-alt" aria-hidden="true"></i></span>Industry exhibitions</td>
+                      <td class="spekers"><span><i class="fa fa-microphone" aria-hidden="true"></i></span></td>
+                      <td class="venue"><span><i class="fa fa-home" aria-hidden="true"></i></span></td>
+                    </tr>
+                     <tr>
+                      <td class="time"><span><i class="fa fa-clock-o" aria-hidden="true"></i></span>04:10am-06:00pm</td>
+                      <td class="session"><span><i class="fa fa-list-alt" aria-hidden="true"></i></span>Industry exhibitions</td>
+                      <td class="spekers"><span><i class="fa fa-microphone" aria-hidden="true"></i></span></td>
+                      <td class="venue"><span><i class="fa fa-home" aria-hidden="true"></i></span></td>
+                    </tr>
+                     <tr>
+                      <td class="time"><span><i class="fa fa-clock-o" aria-hidden="true"></i></span>06:30am-08:00pm</td>
+                      <td class="session"><span><i class="fa fa-list-alt" aria-hidden="true"></i></span>Industry exhibitions</td>
+                      <td class="spekers"><span><i class="fa fa-microphone" aria-hidden="true"></i></span></td>
+                      <td class="venue"><span><i class="fa fa-home" aria-hidden="true"></i></span></td>
+                    </tr>
+                    
+                  </tbody>
+                </table>
+              </div><!-- schedule-table -->
+              
+
             </div>
+            <div role="tabpanel" class="tab-pane" id="day-two">
+              <div class="schedule-table table-responsive">
+                <table>
+                  <thead>
+                    <tr>
+                      <th class="time">Time</th>
+                      <th class="session">Session</th>
+                      <th class="spekers">Speakers</th>
+                      <th class="venue">Venue</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="time"><span><i class="fa fa-clock-o" aria-hidden="true"></i></span>09:00am-10:00am</td>
+                      <td class="session"><span><i class="fa fa-list-alt" aria-hidden="true"></i></span> NL 11</td>
+                      <td class="spekers"><span><i class="fa fa-microphone" aria-hidden="true"></i></span></td>
+                      <td class="venue"><span><i class="fa fa-home" aria-hidden="true"></i></span>LH1</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><span><i class="fa fa-clock-o" aria-hidden="true"></i></span>10:10am-11:10am</td>
+                      <td class="session"><span><i class="fa fa-list-alt" aria-hidden="true"></i></span> NL 21 </td>
+                      <td class="spekers"><span><i class="fa fa-microphone" aria-hidden="true"></i></span></td>
+                      <td class="venue"><span><i class="fa fa-home" aria-hidden="true"></i></span>LH1</td>
+                    </tr>
+                     <tr>
+                      <td class="time"><span><i class="fa fa-clock-o" aria-hidden="true"></i></span>11:30am-12:30am</td>
+                      <td class="session"><span><i class="fa fa-list-alt" aria-hidden="true"></i></span> Tea Break </td>
+                      <td class="spekers"></td>
+                      <td class="venue"></td> 
+                    </tr>
+                     <tr>
+                      <td class="time"><span><i class="fa fa-clock-o" aria-hidden="true"></i></span>11:30am-12:30am</td>
+                      <td class="session"><span><i class="fa fa-list-alt" aria-hidden="true"></i></span>Lecture for University Students(LH1 – Industry 1)<br>Lecture  for  School Children (LH2 – NL4) </td>
+                      <td class="spekers"><span><i class="fa fa-microphone" aria-hidden="true"></i></span></td>
+                      <td class="venue"><span><i class="fa fa-home" aria-hidden="true"></i></span>LH1, LH2</td>
+                    </tr>
+                    <tr>
+                       <td class="time"><span><i class="fa fa-clock-o" aria-hidden="true"></i></span>12:40am-01:40am</td>
+                      <td class="spekers"><span><i class="fa fa-microphone" aria-hidden="true"></i></span></td>
+                      <td class="venue"><span><i class="fa fa-home" aria-hidden="true"></i></span>LH1, LH2</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><span><i class="fa fa-clock-o" aria-hidden="true"></i></span>01:40am-02:40pm</td>
+                      <td class="session"><span><i class="fa fa-list-alt" aria-hidden="true"></i></span>Lunch Break</td>
+                      <td class="spekers"></td>
+                      <td class="venue"></td>
+                    </tr>
+                     <tr>
+                      <td class="time"><span><i class="fa fa-clock-o" aria-hidden="true"></i></span>02:40am-04:00pm</td>
+                      <td class="session"><span><i class="fa fa-list-alt" aria-hidden="true"></i></span>Interaction with University Students  <br>
+( 4 parallel groups – LH1, LH3, LH4. LH5)
+Interaction with School  children 
+ (1 group  - LH2)
+</td>
+                      <td class="spekers"><span><i class="fa fa-microphone" aria-hidden="true"></i></span></td>
+                      <td class="venue"><span><i class="fa fa-home" aria-hidden="true"></i></span>LH1, LH2 LH3, LH4. LH5</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><span><i class="fa fa-clock-o" aria-hidden="true"></i></span>04:10am-06:00pm</td>
+                      <td class="session"><span><i class="fa fa-list-alt" aria-hidden="true"></i></span>Contribution of Science,Engg,and Technology leading to empowerment of society.
+</td>
+                      <td class="spekers"><span><i class="fa fa-microphone" aria-hidden="true"></i></span></td>
+                      <td class="venue"><span><i class="fa fa-home" aria-hidden="true"></i></span></td>
+                    </tr>
+                    <tr>
+                      <td class="time"><span><i class="fa fa-clock-o" aria-hidden="true"></i></span>06:30am-08:00pm</td>
+                      <td class="session"><span><i class="fa fa-list-alt" aria-hidden="true"></i></span>Cultural program by Sahyadri students.
+</td>
+                      <td class="spekers"><span><i class="fa fa-microphone" aria-hidden="true"></i></span></td>
+                      <td class="venue"><span><i class="fa fa-home" aria-hidden="true"></i></span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div><!-- schedule-table -->
+             
+            </div>
+            <div role="tabpanel" class="tab-pane" id="day-three">
+              <div class="schedule-table table-responsive">
+                <table>
+                  <thead>
+                    <tr>
+                      <th class="time">Time</th>
+                      <th class="session">Session</th>
+                      <th class="spekers">Speakers</th>
+                      <th class="venue">Venue</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="time"><span><i class="fa fa-clock-o" aria-hidden="true"></i></span>09:00am-10:00am</td>
+                      <td class="session"><span><i class="fa fa-list-alt" aria-hidden="true"></i></span> NL31 </td>
+                      <td class="spekers"><span><i class="fa fa-microphone" aria-hidden="true"></i></span></td>
+                      <td class="venue"><span><i class="fa fa-home" aria-hidden="true"></i></span>LH1</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><span><i class="fa fa-clock-o" aria-hidden="true"></i></span>10:10am-11:10am</td>
+                      <td class="session"><span><i class="fa fa-list-alt" aria-hidden="true"></i></span> NL12  </td>
+                      <td class="spekers"><span><i class="fa fa-microphone" aria-hidden="true"></i></span></td>
+                      <td class="venue"><span><i class="fa fa-home" aria-hidden="true"></i></span>LH1</td>
+                    </tr>
+                    
+                     <tr>
+                      <td class="time"><span><i class="fa fa-clock-o" aria-hidden="true"></i></span>11:10am-11:30pm</td>
+                      <td class="session"><span><i class="fa fa-list-alt" aria-hidden="true"></i></span>Tea Break</td>
+                      <td class="spekers"></td>
+                      <td class="venue"></td>
+                    </tr>
+                    
+                      <tr>
+                      <td class="time"><span><i class="fa fa-clock-o" aria-hidden="true"></i></span>11:30am-12:30am</td>
+                      <td class="session"><span><i class="fa fa-list-alt" aria-hidden="true"></i></span>Lecture for university students(LH1–Industry 2)<br>Lecture for School children (LH2 – NL2) </td>
+                      <td class="spekers"><span><i class="fa fa-microphone" aria-hidden="true"></i></span></td>
+                      <td class="venue"><span><i class="fa fa-home" aria-hidden="true"></i></span>LH1, LH2</td>
+                    </tr>
+                     <tr>
+                       <td class="time"><span><i class="fa fa-clock-o" aria-hidden="true"></i></span>12:40am-01:40am</td>
+                      <td class="session"><span><i class="fa fa-list-alt" aria-hidden="true"></i></span>Lecture for university students(LH1 – SS3)<br>Lecture for School children(LH2 – SS4) </td>
+                      <td class="spekers"><span><i class="fa fa-microphone" aria-hidden="true"></i></span></td>
+                      <td class="venue"><span><i class="fa fa-home" aria-hidden="true"></i></span>LH1, LH2</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><span><i class="fa fa-clock-o" aria-hidden="true"></i></span>01:40am-02:40pm</td>
+                      <td class="session"><span><i class="fa fa-list-alt" aria-hidden="true"></i></span>Lunch Break</td>
+                      <td class="spekers"></td>
+                      <td class="venue"></td>
+                    </tr>
+                     <tr>
+                      <td class="time"><span><i class="fa fa-clock-o" aria-hidden="true"></i></span>02:40am-04:00pm</td>
+                      <td class="session"><span><i class="fa fa-list-alt" aria-hidden="true"></i></span>Interaction with University students <br>
+( 4 parallel groups – LH1, LH3, LH4. LH5)
+Interaction with School  children 
+ (1 group  - LH2)
+</td>
+                      <td class="spekers"><span><i class="fa fa-microphone" aria-hidden="true"></i></span></td>
+                      <td class="venue"><span><i class="fa fa-home" aria-hidden="true"></i></span>LH1, LH2, LH3, LH4, LH5</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><span><i class="fa fa-clock-o" aria-hidden="true"></i></span>04:10am-06:00pm</td>
+                      <td class="session"><span><i class="fa fa-list-alt" aria-hidden="true"></i></span>Panel discussion–promoting product based research. 
+
+</td>
+                      <td class="spekers"><span><i class="fa fa-microphone" aria-hidden="true"></i></span></td>
+                      <td class="venue"><span><i class="fa fa-home" aria-hidden="true"></i></span></td>
+                    </tr>
+                    <tr>
+                      <td class="time"><span><i class="fa fa-clock-o" aria-hidden="true"></i></span>06:30am-08:00pm</td>
+                      <td class="session"><span><i class="fa fa-list-alt" aria-hidden="true"></i></span>Odissi, kuchipudi.
+</td>
+                      <td class="spekers"><span><i class="fa fa-microphone" aria-hidden="true"></i></span></td>
+                      <td class="venue"><span><i class="fa fa-home" aria-hidden="true"></i></span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div><!-- schedule-table -->
+             
+            </div>
+            <div role="tabpanel" class="tab-pane" id="day-four">
+              <div class="schedule-table table-responsive">
+                <table>
+                  <thead>
+                    <tr>
+                      <th class="time">Time</th>
+                      <th class="session">Session</th>
+                      <th class="spekers">Speakers</th>
+                      <th class="venue">Venue</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+                      <td class="time"><span><i class="fa fa-clock-o" aria-hidden="true"></i></span>09:00am-10:00am</td>
+                      <td class="session"><span><i class="fa fa-list-alt" aria-hidden="true"></i></span> NL 22 </td>
+                      <td class="spekers"><span><i class="fa fa-microphone" aria-hidden="true"></i></span></td>
+                      <td class="venue"><span><i class="fa fa-home" aria-hidden="true"></i></span>LH1</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><span><i class="fa fa-clock-o" aria-hidden="true"></i></span>10:10am-11:10am</td>
+                      <td class="session"><span><i class="fa fa-list-alt" aria-hidden="true"></i></span> NL 41 </td>
+                      <td class="spekers"><span><i class="fa fa-microphone" aria-hidden="true"></i></span></td>
+                      <td class="venue"><span><i class="fa fa-home" aria-hidden="true"></i></span>LH1</td>
+                    </tr>
+                    
+                     <tr>
+                      <td class="time"><span><i class="fa fa-clock-o" aria-hidden="true"></i></span>11:10am-11:30pm</td>
+                      <td class="session"><span><i class="fa fa-list-alt" aria-hidden="true"></i></span>Tea Break</td>
+                      <td class="spekers"></td>
+                      <td class="venue"></td>
+                    </tr>
+                    
+                      <tr>
+                      <td class="time"><span><i class="fa fa-clock-o" aria-hidden="true"></i></span>11:30am-12:30am</td>
+                      <td class="session"><span><i class="fa fa-list-alt" aria-hidden="true"></i></span>Lecture for University Students(LH1–Industry 3)<br>Lecture for School Children(LH2 – NL3) </td>
+                      <td class="spekers"><span><i class="fa fa-microphone" aria-hidden="true"></i></span></td>
+                      <td class="venue"><span><i class="fa fa-home" aria-hidden="true"></i></span>LH1, LH2</td>
+                    </tr>
+                     <tr>
+                       <td class="time"><span><i class="fa fa-clock-o" aria-hidden="true"></i></span>12:40am-01:40am</td>
+                      <td class="session"><span><i class="fa fa-list-alt" aria-hidden="true"></i></span>Lecture for University Students(LH1 – SS5)<br>Lecture for School Children(LH2 – SS6) </td>
+                      <td class="spekers"><span><i class="fa fa-microphone" aria-hidden="true"></i></span></td>
+                      <td class="venue"><span><i class="fa fa-home" aria-hidden="true"></i></span>LH1, LH2</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><span><i class="fa fa-clock-o" aria-hidden="true"></i></span>01:40am-02:40pm</td>
+                      <td class="session"><span><i class="fa fa-list-alt" aria-hidden="true"></i></span>Lunch Break</td>
+                      <td class="spekers"></td>
+                      <td class="venue"></td>
+                    </tr>
+                     <tr>
+                      <td class="time"><span><i class="fa fa-clock-o" aria-hidden="true"></i></span>02:40am-04:00pm</td>
+                      <td class="session"><span><i class="fa fa-list-alt" aria-hidden="true"></i></span>Interaction with University Students(4 parallel groups – LH1, LH3, LH4. LH5), Interaction with School Children(1 group - LH2)
+</td>
+                      <td class="spekers"><span><i class="fa fa-microphone" aria-hidden="true"></i></span></td>
+                      <td class="venue"><span><i class="fa fa-home" aria-hidden="true"></i></span>LH1, LH2, LH3, LH4, LH5</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><span><i class="fa fa-clock-o" aria-hidden="true"></i></span>04:10am-06:00pm</td>
+                      <td class="session"><span><i class="fa fa-list-alt" aria-hidden="true"></i></span>Panel discussion by University Students – Improving Science and Technology education in the universities (6 groups). 
+
+</td>
+                      <td class="spekers"><span><i class="fa fa-microphone" aria-hidden="true"></i></span></td>
+                      <td class="venue"><span><i class="fa fa-home" aria-hidden="true"></i></span></td>
+                    </tr>
+                    <tr>
+                      <td class="time"><span><i class="fa fa-clock-o" aria-hidden="true"></i></span>06:30am-08:00pm</td>
+                      <td class="session"><span><i class="fa fa-list-alt" aria-hidden="true"></i></span>Kathak, Mohini Attam
+</td>
+                      <td class="spekers"><span><i class="fa fa-microphone" aria-hidden="true"></i></span></td>
+                      <td class="venue"><span><i class="fa fa-home" aria-hidden="true"></i></span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div><!-- schedule-table -->
+             
+            </div>
+             <div role="tabpanel" class="tab-pane" id="day-five">
+              <div class="schedule-table table-responsive">
+                <table>
+                  <thead>
+                    <tr>
+                      <th class="time">Time</th>
+                      <th class="session">Session</th>
+                      <th class="spekers">Speakers</th>
+                      <th class="venue">Venue</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                
+                    <tr>
+                      <td class="time"><span><i class="fa fa-clock-o" aria-hidden="true"></i></span>09:00am-10:00am</td>
+                      <td class="session"><span><i class="fa fa-list-alt" aria-hidden="true"></i></span> NL 32 </td>
+                      <td class="spekers"><span><i class="fa fa-microphone" aria-hidden="true"></i></span></td>
+                      <td class="venue"><span><i class="fa fa-home" aria-hidden="true"></i></span>LH1</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><span><i class="fa fa-clock-o" aria-hidden="true"></i></span>10:10am-11:10am</td>
+                      <td class="session"><span><i class="fa fa-list-alt" aria-hidden="true"></i></span> NL 42  </td>
+                      <td class="spekers"><span><i class="fa fa-microphone" aria-hidden="true"></i></span></td>
+                      <td class="venue"><span><i class="fa fa-home" aria-hidden="true"></i></span>LH1</td>
+                    </tr>
+                    
+                     <tr>
+                      <td class="time"><span><i class="fa fa-clock-o" aria-hidden="true"></i></span>11:10am-11:30pm</td>
+                      <td class="session"><span><i class="fa fa-list-alt" aria-hidden="true"></i></span>Tea Break</td>
+                      <td class="spekers"></td>
+                      <td class="venue"></td>
+                    </tr>
+                    
+                      <tr>
+                      <td class="time"><span><i class="fa fa-clock-o" aria-hidden="true"></i></span>11:30am-12:30am</td>
+                      <td class="session"><span><i class="fa fa-list-alt" aria-hidden="true"></i></span>Lecture for University Students(LH1–Industry 4)<br>Lecture for School Children (LH2 – NL1) </td>
+                      <td class="spekers"><span><i class="fa fa-microphone" aria-hidden="true"></i></span></td>
+                      <td class="venue"><span><i class="fa fa-home" aria-hidden="true"></i></span>LH1, LH2</td>
+                    </tr>
+                     <tr>
+                       <td class="time"><span><i class="fa fa-clock-o" aria-hidden="true"></i></span>12:40am-01:40am</td>
+                      <td class="session"><span><i class="fa fa-list-alt" aria-hidden="true"></i></span>Lecture by Scientist(LH1-SS7)<br>Lecture by Scientist(LH2-SS8) </td>
+                      <td class="spekers"><span><i class="fa fa-microphone" aria-hidden="true"></i></span></td>
+                      <td class="venue"><span><i class="fa fa-home" aria-hidden="true"></i></span>LH1, LH2</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><span><i class="fa fa-clock-o" aria-hidden="true"></i></span>01:40am-02:40pm</td>
+                      <td class="session"><span><i class="fa fa-list-alt" aria-hidden="true"></i></span>Lunch Break</td>
+                      <td class="spekers"></td>
+                      <td class="venue"></td>
+                    </tr>
+                     <tr>
+                      <td class="time"><span><i class="fa fa-clock-o" aria-hidden="true"></i></span>02:40am-04:00pm</td>
+                      <td class="session"><span><i class="fa fa-list-alt" aria-hidden="true"></i></span>Interaction with University Student (4 parallel groups – LH1, LH3, LH4. LH5), Interaction with School Chilrden (1 group - LH2)
+</td>
+                      <td class="spekers"><span><i class="fa fa-microphone" aria-hidden="true"></i></span></td>
+                      <td class="venue"><span><i class="fa fa-home" aria-hidden="true"></i></span>LH1, LH2, LH3, LH4, LH5</td>
+                    </tr>
+                    <tr>
+                      <td class="time"><span><i class="fa fa-clock-o" aria-hidden="true"></i></span>04:10am-06:00pm</td>
+                      <td class="session"><span><i class="fa fa-list-alt" aria-hidden="true"></i></span>Reports of Panel discussion &amp; Valediction. 
+
+</td>
+                      <td class="spekers"><span><i class="fa fa-microphone" aria-hidden="true"></i></span></td>
+                      <td class="venue"><span><i class="fa fa-home" aria-hidden="true"></i></span></td>
+                    </tr>
+                    <tr>
+                      <td class="time"><span><i class="fa fa-clock-o" aria-hidden="true"></i></span>06:30am-08:00pm</td>
+                      <td class="session"><span><i class="fa fa-list-alt" aria-hidden="true"></i></span>
+</td>
+                      <td class="spekers"><span><i class="fa fa-microphone" aria-hidden="true"></i></span></td>
+                      <td class="venue"><span><i class="fa fa-home" aria-hidden="true"></i></span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div><!-- schedule-table -->
+              
+            </div>
+          </div>
+        </div>
+      </div><!-- container -->
+    </section><!-- schedules -->
+    <!-- Schedules end here -->
+
+
     </section>
 
     <section id="partner" class="section partner">
@@ -597,7 +1123,7 @@ src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJwaiFIqpZozsREurpX
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <p class="site-info">Designed and <br> Developed by <a href="http://technextit.com">Technext Limited</a></p>
+                    <p class="site-info"><a href="http://sahyadri.edu.in">Sahyadri College of Engineering and Managment</a></p>
                     <ul class="social-block">
                         <li><a href=""><i class="ion-social-twitter"></i></a></li>
                         <li><a href=""><i class="ion-social-facebook"></i></a></li>
