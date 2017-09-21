@@ -83,6 +83,7 @@
 }
 .schedules .tab-content table .session{
     width: 40%;
+    text-align: center;
 }
 .schedules .tab-content table .speaker{
     width: 22%;
