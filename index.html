@@ -375,8 +375,8 @@
             				  		</div>	</div>
             						<div class="col-md-6 form-line">
             	<div class="form-group">
-            			  				<label for="exampleInputUsername">Org Name</label>
-            					    	<input type="text" class="form-control" name="org" placeholder=" Org Name">
+            			  				<label for="exampleInputUsername">Organization Name</label>
+            					    	<input type="text" class="form-control" name="org" placeholder=" Organization Name">
             				  		</div>	</div>
             <div class="col-md-12 form-line">
             	<div class="form-group">
@@ -399,107 +399,67 @@
             					    	<textarea type="text" class="form-control" name="person" placeholder="Name, Relation, MobileNo"></textarea>
             				  		</div>	</div>
             <div class="col-md-6 form-line">
-            	<div class="form-group">
+            	<div class="form-group radio">
             			  				<label class="checkbox-inline">
-                  <input type="checkbox" value="teacher">Teacher
+                  <input type="radio" value="teacher" name="occupation">Teacher
                 </label>
             				  		</div>	</div>
             						<div class="col-md-6 form-line">
-            	<div class="form-group">
+            	<div class="form-group radio">
             			  				<label class="checkbox-inline">
-                  <input type="checkbox" value="student">Student
+                  <input type="radio" value="student" name="occupation">Student
                 </label>
             				  		</div>	</div>
+                          <div class="dropdown">
 
+
+                          </div>
             <div class="col-md-3 form-line">
             	<div class="form-group">
             			  				<label>Course of study:
                 </label>
             				  		</div>	</div>
             						<div class="col-md-3 form-line">
-            	<div class="form-group">
-            			  				<label class="checkbox-inline">
-                  <input type="checkbox" value="btech">B.Tech
-                </label>
+            	<div class="form-group dropdown">
+                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">B.Tech/M.Tech
+                <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Civil Engineering</a></li>
+                  <li><a href="#">Computer Science Engineering</a></li>
+                  <li><a href="#">Electronics Engineering</a></li>
+                  <li><a href="#">Mechanical Engineering</a></li>
+                </ul>
             				  		</div>	</div>
-            						<div class="col-md-3 form-line">
-            	<div class="form-group">
-            			  				<label class="checkbox-inline">
-                  <input type="checkbox" value="msc">M. Sc
-                </label>
-            				  		</div>	</div>
-            						<div class="col-md-3 form-line">
-            	<div class="form-group">
-            			  				<label class="checkbox-inline">
-                  <input type="checkbox" value="phd">PhD
-                </label>
-            				  		</div>	</div>
-            						<div class="col-md-12 form-line">
-            <label>Academic record (If candidate is in final year of B. Tech / M.Sc/PhD)</label>
-
-            		<table class="table table-bordered table-responsive">
-                     <thead>
-                        <tr>
-                            <th>Last exam passed</th>
-            				<th>Grade</th>
-            				<th>Rank in class</th>
-            				<th>Name of University</th>
-                        </tr>
-            			</thead>
-            			<td><input type="text" name="exam" class="form-control" placeholder="Last exam passed"></td>
-                         <td><input type="text" name="grade" class="form-control" placeholder="Grade"></td>
-                         <td><input type="text" name="rank" class="form-control" placeholder="Rank in class"></td>
-            			 <td><input type="text" name="university" class="form-control" placeholder="University"></td>
-
-            			<tbody>
-                <tr>
-
-            	</tr>
-            </table>	</div>
+                          <div class="col-md-3 form-line">
+              	<div class="form-group dropdown">
+                  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">B.SC/M.Sc
+                  <span class="caret"></span></button>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Biology</a></li>
+                    <li><a href="#">Chemistry</a></li>
+                    <li><a href="#">Computer Science</a></li>
+                    <li><a href="#">Mathematics</a></li>
+                    <li><a href="#">Physics</a></li>
+                  </ul>
+              				  		</div>	</div>
+                            <div class="col-md-3 form-line">
+                	<div class="form-group dropdown">
+                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Other
+                    <span class="caret"></span></button>
+                    <ul class="dropdown-menu">
+                      <li class="dropdown-header">High School</li>
+                      <li><a href="#">9th</a></li>
+                      <li><a href="#">10th</a></li>
+                      <li class="divider"></li>
+                      <li class="dropdown-header">P.U</li>
+                      <li><a href="#">PCMB</a></li>
+                      <li><a href="#">PCMC</a></li>
+                      <li><a href="#">PCME</a></li>
+                      <li><a href="#">PCMS</a></li>
+                    </ul>
+                				  		</div>	</div>
             <div class="col-md-12 form-line">
-            <label>Discipline:</label>	</div>
-            <div class="col-md-3 form-line">
-            	<div class="form-group">
-            			  				<label class="checkbox-inline">
-                  <input type="checkbox" value="physics">Physics
-                </label>
-            				  		</div>	</div>
-            						<div class="col-md-3 form-line">
-            	<div class="form-group">
-            			  				<label class="checkbox-inline">
-                  <input type="checkbox" value="chemistry">Chemistry
-                </label>
-            				  		</div>	</div>
-            						<div class="col-md-3 form-line">
-            	<div class="form-group">
-            			  				<label class="checkbox-inline">
-                  <input type="checkbox" value="maths">Mathemetics
-                </label>
-            				  		</div>	</div>
-            <div class="col-md-3 form-line">
-            	<div class="form-group">
-            			  				<label class="checkbox-inline">
-                  <input type="checkbox" value="teacher">Bilogy
-                </label>
-            				  		</div>	</div><div class="col-md-3 form-line">
-            	<div class="form-group">
-            			  				<label class="checkbox-inline">
-                  <input type="checkbox" value="teacher">B.Tech
-                </label>
-            				  		</div>	</div><div class="col-md-3 form-line">
-            	<div class="form-group">
-            			  				<label class="checkbox-inline">
-                  <input type="checkbox" value="teacher">B.Tech
-                </label>
-            				  		</div>	</div>
-            						<div class="col-md-3 form-line">
-            	<div class="form-group">
-            			  				<label class="checkbox-inline">
-                  <input type="checkbox" value="teacher">B.Tech
-                </label>
-            				  		</div>	</div>
-            <div class="col-md-12 form-line">
-            <input type="submit" name="submit" value="Register" class="pull-left">
+            <input type="submit" name="submit" value="Register" class="pull-left btn btn-primary">
             </div>
 
 
@@ -1035,7 +995,7 @@ Interaction with School  children
                       <td class="session"><span><i class="fa fa-list-alt" aria-hidden="true"></i></span>Reports of Panel discussion &amp; Valediction.
 =======
                       <td class="time"><span><i class="fa fa-clock-o" aria-hidden="true"></i></span>04:00pm-05:00pm</td>
-                      <td class="session"><span><i class="fa fa-list-alt" aria-hidden="true"></i></span>Valedictory 
+                      <td class="session"><span><i class="fa fa-list-alt" aria-hidden="true"></i></span>Valedictory
 >>>>>>> 13f4ba74dc5eca6f5f002dba77b7581d9bacfb21
 
 </td>
