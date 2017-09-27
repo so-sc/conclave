@@ -182,7 +182,7 @@
                     <div class="speaker">
 
                         <figure>
-                            <img alt="" class="img-responsive center-block" src="assets/images/speakers/sifakis.jpg" width="50" height="40">
+                            <img alt="" class="img-responsive center-block" src="assets/images/speakers/sifakis.jpg">
                         </figure>
 
                         <h4>Prof. Joseph Sifakis</h4>
@@ -203,7 +203,7 @@
                     <div class="speaker">
 
                         <figure>
-                            <img alt="" class="img-responsive center-block" src="assets/images/speakers/andrey.jpeg" width="50" height="40">
+                            <img alt="" class="img-responsive center-block" src="assets/images/speakers/andrey.jpeg">
                         </figure>
 
                         <h4>Prof. Andrey Slavnov</h4>
@@ -366,44 +366,38 @@
                 </label>
             				  		</div>	</div>
             						<div class="col-md-3 form-line">
-            	<div class="form-group dropdown">
-                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">B.Tech/M.Tech
-                <span class="caret"></span></button>
-                <ul class="dropdown-menu">
-                  <li><a href="#">Civil Engineering</a></li>
-                  <li><a href="#">Computer Science Engineering</a></li>
-                  <li><a href="#">Electronics Engineering</a></li>
-                  <li><a href="#">Mechanical Engineering</a></li>
-                </ul>
-            				  		</div>	</div>
+                          <div class="form-group" default="B.Tech/M.Tech">
+              <label for="sel1">B.Tech/M.Tech:</label>
+              <select class="form-control" id="sel1">
+                <option>Computer Science and Engineering</option>
+                <option>Mechanical Engineering</option>
+                <option>Electrical Engineering</option>
+                <option>Civil Engineering</option>
+              </select>
+            </div>
+            				  		</div>
                           <div class="col-md-3 form-line">
-              	<div class="form-group dropdown">
-                  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">B.SC/M.Sc
-                  <span class="caret"></span></button>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">Biology</a></li>
-                    <li><a href="#">Chemistry</a></li>
-                    <li><a href="#">Computer Science</a></li>
-                    <li><a href="#">Mathematics</a></li>
-                    <li><a href="#">Physics</a></li>
-                  </ul>
-              				  		</div>	</div>
+                            <div class="form-group">
+                <label for="sel1">B.Sc/M.Sc:</label>
+                <select class="form-control" id="sel1">
+                  <option>Physics</option>
+                  <option>Biology</option>
+                  <option>Maths</option>
+                  <option>Chemistry</option>
+                </select>
+              </div>
+              				  			</div>
                             <div class="col-md-3 form-line">
-                	<div class="form-group dropdown">
-                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Other
-                    <span class="caret"></span></button>
-                    <ul class="dropdown-menu">
-                      <li class="dropdown-header">High School</li>
-                      <li><a href="#">9th</a></li>
-                      <li><a href="#">10th</a></li>
-                      <li class="divider"></li>
-                      <li class="dropdown-header">P.U</li>
-                      <li><a href="#">PCMB</a></li>
-                      <li><a href="#">PCMC</a></li>
-                      <li><a href="#">PCME</a></li>
-                      <li><a href="#">PCMS</a></li>
-                    </ul>
-                				  		</div>	</div>
+                              <div class="form-group">
+              <label for="sel1">Other:</label>
+              <select class="form-control" id="sel1">
+                <option>9/10th Std</option>
+                <option>PU:PCMC</option>
+                <option>PU:PCMB</option>
+                <option>PU:PCMS</option>
+
+              </select>
+            </div>	</div>
             <div class="col-md-12 form-line">
             <input type="submit" name="submit" value="Register" class="pull-left btn btn-primary">
             </div>
