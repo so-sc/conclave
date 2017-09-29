@@ -1,4 +1,13 @@
-
+#top-link-block.affix-top {
+    position: absolute; /* allows it to "slide" up into view */
+    bottom: -82px;
+    left: 10px;
+}
+#top-link-block.affix {
+    position: fixed; /* keeps it on the bottom once in view */
+    bottom: 18px;
+    left: 10px;
+}
 /*  07  - Schedules
 ----------------------------------------------*/
 .schedules{}
@@ -444,7 +453,7 @@ img {
     z-index: 99; /* Make sure it does not overlap */
     border: none; /* Remove borders */
     outline: none; /* Remove outline */
-    background-color: red; /* Set a background color */
+    background-color: #cecece; /* Set a background color */
     color: white; /* Text color */
     cursor: pointer; /* Add a mouse pointer on hover */
     padding: 15px; /* Some padding */
@@ -453,4 +462,18 @@ img {
 
 #myBtn:hover {
     background-color: #555; /* Add a dark-grey background on hover */
+/*    transition: .5s ease;
+*/}
+
+#topbtn{
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
 }
+
+.up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+

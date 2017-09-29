@@ -44,7 +44,18 @@
   </div>
 </div> -->
 
-<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<!-- <button id="myBtn"><a data-scroll href="#introd"><i class="arrow up" id="topbtn"></i></button>
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="arrow up"></i></button>
+ -->
+
+ <!-- child of the body tag -->
+<!-- <span id="top-link-block" class="hidden">
+    <a href="#top" class="well well-sm" onclick="$('html,body').animate({scrollTop:0},'slow');return false;">
+        <i id="topbtn" class="glyphicon glyphicon-chevron-up"></i>
+    </a>
+</span> --><!-- /top-link-block -->
+
 
     <nav id="site-nav" class="navbar navbar-fixed-top navbar-custom">
         <div class="container">
@@ -55,7 +66,9 @@
                     <a class="logo" href="index.html">
 
                         <!-- logo image  -->
-                        <!--<img src="assets/images/SSTMC.png" alt="Logo" >-->
+                      <!-- <div class="main-logo">
+                        <img src="assets/images/SSTMC.png" alt="Logo" >
+                      </div> -->
                         Sahyadri Science Technology & Management Conclave
 
 
@@ -78,8 +91,8 @@
                     <li class="active"><a data-scroll href="#about">About</a></li>
                     <li><a data-scroll href="#speakers">Speakers</a></li>
                     <li><a data-scroll href="#schedule">Schedule</a></li>
-                    <li><a data-scroll href="#partner">Partner</a></li>
-                    <li><a data-scroll href="#Team">Team</a></li>
+                    <li><a data-scroll href="#partner">Sponsors</a></li>
+                    <li><a data-scroll href="#Team">Patrons</a></li>
 
                   <!--  <li><a data-scroll href="#photos">Photos</a></li> -->
 
@@ -90,8 +103,11 @@
     </nav>
 
     <header id="site-header" class="site-header valign-center">
-        <div class="intro">
+        <div class="intro" id="introd">
 
+
+            <a href="#">
+              <img src="assets/images/STMC-Logo-01.jpg" alt="Logo" style="width: 25%;margin-bottom: 15px;height: auto;margin-top: 100px;">            </a>
 
 
             <h1> SAHYADRI SCIENCE TECHNOLOGY &amp; MANAGEMENT CONCLAVE 2018</h1>
@@ -195,7 +211,7 @@
                         </figure>
 
                         <h4>Prof. Joseph Sifakis</h4>
-
+                        <p>Greek Computer Scientist</p>
                         <!-- <p>CEO of Peren</p> -->
 
 
@@ -211,7 +227,7 @@
                         </figure>
 
                         <h4>Prof. Andrey Slavnov</h4>
-
+                        <p>Russian theoretical physicist</p>
                         <!-- <p>CEO of Peren</p> -->
 
 
@@ -227,7 +243,7 @@
                         </figure>
 
                         <h4>Prof. Robert C Richardson</h4>
-
+                        <p>American experimental physicist</p>
                         <!-- <p>CEO of Peren</p> -->
 
 
@@ -243,7 +259,7 @@
                         </figure>
 
                         <h4>Prof. Ada Yonath</h4>
-
+                        <p>Israeli crystallographer</p>
                         <!-- <p>CEO of Peren</p> -->
 
 
@@ -261,7 +277,7 @@
                         </figure>
 
                         <h4>Prof. Harald Zur Hausen</h4>
-
+                        <p>German virologist</p>
                         <!-- <p>CEO of Peren</p> -->
 
 
@@ -282,6 +298,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <h3 class="section-title">Event Schedule</h3>
+
                 </div>
             </div>
 
@@ -289,7 +306,7 @@
       <div class="container">
         <div class="section-header text-center">
           <h3>Event Schedules</h3>
-
+<p>Download the pdf of event schedule <a href="#"><b>here</b></a></p>
         </div>
 
         <div class="schedule-tabs">
@@ -730,14 +747,12 @@
           <br><br><br><br><br><br><br><br><br><br>
     </section>
 
-    <section id="Team" class="section speakers" style="background: #f1f1f1;>
+    <section id="Team" class="section speakers" style="background: #f1f1f1;">
+        
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-
                   <div class="row"><h2 align="center">Chief Patrons</h2></div>
-
-
                 </div>
             </div>
 
@@ -984,30 +999,8 @@
 
 
 
-    <section id="location" class="section location">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-3">
-                    <h3 class="section-title">Event Location</h3>
-                    <address>
-                        <p>Sahyadri College of Engineering &amp; Management<br> Sahyadri Campus Adyar<br> Mangaluru -575007, Karnataka, India<br> Phone: +91 824 2277222/333<br> Email: sahyadri@sahyadri.edu.in</p>
-                    </address>
-                    <!-- <p>Mangalore is a well connected city with all four major transports.</p> -->
-                    <a href="C:\Users\hp\Desktop\CO\conclave\transport.html">Read more about transport details</a>
-                </div>
-                <div class="col-sm-9">
-                    <iframe src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJwaiFIqpZozsREurpXU2U_ww&key=AIzaSyBkpe0PmDF-aM5nvqEN4bR3bTcccmNfQeo" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-                </div>
-                <!--  <div>
-                     <p>Mangalore is a well connected city with all four major transports.</p>
-                    <a href="C:\Users\hp\Desktop\CO\conclave\transport.html">Read more about transport details</a>
-                </div> -->
-            </div>
-        </div>
-
-    </section>
-
-    <hr/>
+   
+    <br>
     <section id="registration" class="section registration" style="background: #f1f1f1;">
         <div class="container">
             <div class="row">
@@ -1135,7 +1128,32 @@
 
             </form>
         </div>
+    </section> <!-- end of registration section -->
+
+
+     <section id="location" class="section location">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <h3 class="section-title">Event Location</h3>
+                    <address>
+                        <p>Sahyadri College of Engineering &amp; Management<br> Sahyadri Campus Adyar<br> Mangaluru -575007, Karnataka, India<br> Phone: +91 824 2277222/333<br> Email: sahyadri@sahyadri.edu.in</p>
+                    </address>
+                    <!-- <p>Mangalore is a well connected city with all four major transports.</p> -->
+                    <a data-scroll href="#contribution">Read more about transport details</a>
+                </div>
+                <div class="col-sm-9">
+                    <iframe src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJwaiFIqpZozsREurpXU2U_ww&key=AIzaSyBkpe0PmDF-aM5nvqEN4bR3bTcccmNfQeo" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+                <!--  <div>
+                     <p>Mangalore is a well connected city with all four major transports.</p>
+                    <a href="C:\Users\hp\Desktop\CO\conclave\transport.html">Read more about transport details</a>
+                </div> -->
+            </div>
+        </div>
+
     </section>
+
 
     <section id="contribution" class="section bg-image-2 contribution">
         <div class="container">
@@ -1149,7 +1167,7 @@
         </div>
     </section>
 
-
+<!-- 
     <script>
 
 // When the user scrolls down 20px from the top of the document, show the button
@@ -1163,13 +1181,24 @@ function scrollFunction() {
     }
 }
 
+
+// Only enable if the document has a long scroll bar
+// Note the window height + offset
+if ( ($(window).height() + 100) < $(document).height() ) {
+    $('#top-link-block').removeClass('hidden').affix({
+        // how far to scroll down before link "slides" into view
+        offset: {top:100}
+    });
+}
+
+
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
     </script>
-
+ -->
     <!-- script -->
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
