@@ -419,7 +419,9 @@ ul li {
 .speaker img:hover {
   opacity: .7;
 }
-
+.info {
+  display: none;
+}
 /*
  * 6.4 Section: Registration & Pricing
  */
