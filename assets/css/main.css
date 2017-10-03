@@ -18,6 +18,7 @@ body {
   line-height: 1.6;
   position: relative;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
 
 a {
@@ -419,9 +420,7 @@ ul li {
 .speaker img:hover {
   opacity: .7;
 }
-.info {
-  display: none;
-}
+
 /*
  * 6.4 Section: Registration & Pricing
  */
