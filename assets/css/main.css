@@ -608,3 +608,6 @@ ul li {
 .site-footer .social-block li a:hover, .site-footer .social-block li a:focus {
   opacity: 0.8;
 }
+.navbar-right {
+      margin-top: 17px;
+}
