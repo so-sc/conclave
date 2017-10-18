@@ -36,6 +36,17 @@ sup {
 
 <body data-spy="scroll" data-target="#site-nav">
 
+<div class="crossfade">
+</div>
+
+<!-- Social Icons -->
+<ul id="social_side_links">
+  <li><a style="background-color: #3c5a96;" href="https://www.facebook.com/Sahyadri.edu/" target="_blank"><img src="assets/images/icons/facebook-icon.png" alt="" /></a></li>
+  <li><a style="background-color: #1dadeb;" href="https://twitter.com" target="_blank"><img src="assets/images/icons/twitter-icon.png" alt="" /></a></li>
+  <li><a style="background-color: #1178b3;" href="https://linkedin.com" target="_blank"/><img src="assets/images/icons/linkedin-icon.png" alt=""></a></li>
+</ul>
+
+
 <!-- <div class="floating-item-container">
   <div class="button-container">
     <a href="#" class="btn btn-float">
@@ -64,7 +75,7 @@ sup {
     </a>
 </span> --><!-- /top-link-block -->
 
-
+<div class="se-pre-con"></div>
     <nav id="site-nav" class="navbar navbar-fixed-top navbar-custom">
         <div class="container">
             <div class="navbar-header">
@@ -116,6 +127,15 @@ sup {
     </nav>
 
     <header id="site-header" class="site-header valign-center">
+
+        <figure></figure>
+
+  <figure></figure>
+
+  <figure></figure>
+
+  <figure></figure>
+  <figure></figure>
         <div class="intro" id="introd">
 
 
@@ -464,6 +484,7 @@ interactive session more productive.</p>
             </div>
 </div>
 </section> -->
+</section>
     <section id="schedules" class="schedules padding-120">
       <div class="container">
         <div class="section-header text-center">
@@ -1454,10 +1475,29 @@ function topFunction() {
     </script>
  -->
     <!-- script -->
+
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="bower_components/smooth-scroll/dist/js/smooth-scroll.min.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="main3.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+<script>
+ 
+//   var delayMillis = 100000; 
+
+// setTimeout(function() {
+ 
+// }, delayMillis);
+  $(window).load(function() {
+    // Animate loader off screen
+    function show(){
+    $(".se-pre-con").fadeOut("slow");
+  };
+    window.setTimeout( show, 1000 ); // 1 seconds
+  });
+
+</script>
+
 </body>
 </html>
