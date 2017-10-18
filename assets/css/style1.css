@@ -617,3 +617,7 @@ imageAnimation {  0% {
  opacity: 0
 }
 }
+
+#about {
+    background: #ecf0f1;
+}
