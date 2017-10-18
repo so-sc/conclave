@@ -1453,7 +1453,7 @@ function topFunction() {
     </script>
  -->
     <!-- script -->
-    
+
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="bower_components/smooth-scroll/dist/js/smooth-scroll.min.js"></script>
@@ -1461,12 +1461,20 @@ function topFunction() {
     <script src="main3.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
 <script>
-  //paste this code under head tag or in a seperate js file.
-  // Wait for window load
+ 
+//   var delayMillis = 100000; 
+
+// setTimeout(function() {
+ 
+// }, delayMillis);
   $(window).load(function() {
     // Animate loader off screen
-    $(".se-pre-con").fadeOut("slow");;
+    function show(){
+    $(".se-pre-con").fadeOut("slow");
+  };
+    window.setTimeout( show, 2000 ); // 2 seconds
   });
+
 </script>
 
 </body>
