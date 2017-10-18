@@ -534,6 +534,7 @@
     transition: 1s ease;
 }
 
+@media screen and (max-device-width: 860px){
 
 .site-header > figure {
   animation: imageAnimation 30s linear infinite 0s;
@@ -614,5 +615,6 @@ imageAnimation {  0% {
 }
  100% {
  opacity: 0
+}
 }
 }
