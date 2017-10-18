@@ -326,6 +326,10 @@ ul li {
   text-align: center;
   background: url(../images/backgrounds/aa-reduced-1.jpg) no-repeat center center/cover;
   display: table;
+  background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .site-header::before {
   content: "";
