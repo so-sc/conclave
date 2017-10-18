@@ -234,6 +234,10 @@ ul li {
 
 .bg-image-2 {
   background: url(../images/backgrounds/aa-reduced-1.jpg) no-repeat center bottom/cover;
+  background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .bg-image-2::before {
   background-color: rgba(0, 0, 0, 0.7);
