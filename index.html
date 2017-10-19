@@ -32,6 +32,7 @@ sup {
        <!-- Flat icon -->
     <link rel="stylesheet" type="text/css" href="assets/css/flaticon.css">
     <link rel="stylesheet" type="text/css" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body data-spy="scroll" data-target="#site-nav">
@@ -248,6 +249,7 @@ sup {
         </div>
     </section>
 -->
+
 <section id="speakers" class="section speakers">
     <div class="container">
 
@@ -330,7 +332,7 @@ sup {
                               <div class="container1">
                                   <img src="assets/images/speakers/andrey.jpeg" alt="Avatar" class="image">
                                   <div class="overlay">
-                                      <div class="text">Graduated with honour from Physical Faculty of Moscow state University at 1962.PhD course at Steklov Mathematical Institute (Moscow) 1962-1965. PhD (1965).Recipient of the State Prize of Russia in science (1995).Holder of Humboldt Research Award (1999).Recipient of the Fock Prize of the Russian Academy of Sciences (2007). Read more <a href="http://www.scholarpedia.org/article/User:Andrei_A._Slavnov"  onclick="window.open(this.href); return false;" onkeypress="window.open(this.href); return false;">here</a></div>
+                                      <div class="text">Graduated with honour from Physical Faculty of Moscow state University at 1962.PhD course at Steklov Mathematical Institute (Moscow) 1962-1965. PhD (1965). Read more <a href="http://www.scholarpedia.org/article/User:Andrei_A._Slavnov"  onclick="window.open(this.href); return false;" onkeypress="window.open(this.href); return false;">here</a></div>
                                   </div>
                               </div>
                               <h4>Prof. Andrei A Slavnov</h4>
@@ -347,7 +349,7 @@ sup {
                                   <img src="assets/images/speakers/robert.jpeg" alt="Avatar" class="image">
                                   <div class="overlay">
                                       <div class="text">
-                                          Professor Robert Richardson is the Director of the Institute of Design, Robotics and Optimisation and Director of the Leeds EPSRC National Facility for Innovative Robotic Systems. <br> Read more <a href="https://engineering.leeds.ac.uk/staff/173/robert_richardson"  onclick="window.open(this.href); return false;" onkeypress="window.open(this.href); return false;">here</a>
+                                          Professor Robert Richardson is the Director of the Institute of Design, Robotics and Optimisation. <br> Read more <a href="https://engineering.leeds.ac.uk/staff/173/robert_richardson"  onclick="window.open(this.href); return false;" onkeypress="window.open(this.href); return false;">here</a>
 
 
 
@@ -490,6 +492,7 @@ interactive session more productive.</p>
 </div>
 </section> -->
 </section>
+
     <section id="schedules" class="schedules padding-120">
       <div class="container">
         <div class="section-header text-center">
@@ -1278,11 +1281,16 @@ Technology, Kanpur and Ph.D. in Materials Engineering from State University of N
 
             <form id="login-form" action="#" method="post" role="form" style="display: block;">
 
-            	<div class="col-md-12 form-line">
+            	<div class="col-md-6 form-line">
             	<div class="form-group">
-            			  				<label for="exampleInputUsername">Full Name</label>
-            					    	<input type="text" class="form-control" name="FullName" placeholder=" Full Name" required>
+            			  				<label for="exampleInputUsername">First Name</label>
+            					    	<input type="text" class="form-control" name="FirstName" placeholder=" First Name" required>
             				  		</div>	</div>
+                          <div class="col-md-6 form-line">
+              <div class="form-group">
+                            <label for="exampleInputUsername">Last Name</label>
+                            <input type="text" class="form-control" name="LastName" placeholder=" Last Name" required>
+                          </div>  </div>
             	<!-- <div class="col-md-6 form-line">
             	<div class="form-group">
             		<label for="exampleInputUsername">Gender</label> -->
@@ -1403,7 +1411,9 @@ Technology, Kanpur and Ph.D. in Materials Engineering from State University of N
                 <div class="col-sm-3">
                     <h3 class="section-title">Event Location</h3>
                     <address>
-                        <p>Sahyadri College of Engineering &amp; Management<br> Sahyadri Campus Adyar<br> Mangaluru -575007, Karnataka, India<br> Phone: +91 824 2277222/333<br> Email: sahyadri@sahyadri.edu.in</p>
+                        <p><!-- <i class="fa fa-address-book" style="font-size:24px;" aria-hidden="true"></i> -->Sahyadri College of Engineering &amp; Management<br> Sahyadri Campus Adyar<br> Mangaluru -575007, Karnataka, India</p>
+                        <p><i class="fa fa-phone" style="font-size:24px;" aria-hidden="true"></i> +91 8242277222</p>
+                        <p><i class="fa fa-envelope" style="font-size:24px;" aria-hidden="true"></i> sahyadri@sahyadri.edu.in</p>
                     </address>
                     <!-- <p>Mangalore is a well connected city with all four major transports.</p> -->
                     <!-- <a data-scroll href="#contribution">Read more about transport details</a> -->
