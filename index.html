@@ -91,11 +91,11 @@ sup {
                       </div> -->
 
 
-                      <img src="assets/images/llss.jpg" style="width: 65px;border-radius: 30px;margin: 7px;">  
+                      <img src="assets/images/llss.jpg" style="width: 65px;border-radius: 30px;margin: 7px;">
                       Sahyadri Conclave
                       <!-- <img src="assets/images/main-logo.png" style="width: 250px;margin: 7px;"> -->
                       <!-- <img src="assets/images/main-logo.png"> -->
-                     
+
                     </a>
                 </div>
 
@@ -353,7 +353,7 @@ sup {
 
 
 
-                                         
+
 
 
 
@@ -1279,7 +1279,7 @@ Technology, Kanpur and Ph.D. in Materials Engineering from State University of N
                 </div>
             </div>
 
-            <form id="login-form" action="#" method="post" role="form" style="display: block;">
+<form id="login-form" action="/registration.php" method="post" role="form" style="display: block;" enctype="multipart/form-data">
 
             	<div class="col-md-6 form-line">
             	<div class="form-group">
@@ -1334,7 +1334,12 @@ Technology, Kanpur and Ph.D. in Materials Engineering from State University of N
             			  				<label for="exampleInputUsername">Person to be contacted in emergency (Name, Relation & Mobile no.)</label>
             					    	<textarea type="text" class="form-control" name="person" placeholder="Name, Relation, MobileNo"></textarea>
             				  		</div>	</div>
+                          <div class="row">
+                            <label>Occupation:</label>
+                          </div>
+                          <div class="row">
             <div class="col-md-6 form-line">
+
             	<div class="form-group radio">
             			  				<label class="checkbox-inline">
                   <input type="radio" value="teacher" name="occupation">Teacher
@@ -1345,7 +1350,7 @@ Technology, Kanpur and Ph.D. in Materials Engineering from State University of N
             			  				<label class="checkbox-inline">
                   <input type="radio" value="student" name="occupation">Student
                 </label>
-            				  		</div>	</div>
+              </div>	</div></div>
                           <div class="dropdown">
 
 
@@ -1357,43 +1362,32 @@ Technology, Kanpur and Ph.D. in Materials Engineering from State University of N
             				  		</div>	</div>
                           <div class="col-md-3 form-line">
                             <div class="form-group">
-            <label for="sel1">Higher Secondary:</label>
-            <select class="form-control" id="sel1">
-              <option>Select</option>
-              <option>9th Std.</option>
-              <option>10th Std.</option>
-              <option>PU</option>
-
-            </select>
+            <select class="form-control" id="sel1" name="study" required>
+  <optgroup label="Higher Secondary">
+  <option>Select</option>
+  <option>9th Std.</option>
+  <option>10th Std.</option>
+  <option>PU</option>
+</optgroup>
+<optgroup label="B.Tech/M.Tech">
+  <option>Computer Science and Engineering</option>
+  <option>Mechanical Engineering</option>
+  <option>Electrical Engineering</option>
+  <option>Civil Engineering</option>
+</optgroup>
+<optgroup label="B.Sc/M.Sc:">
+<option>Physics</option>
+<option>Biology</option>
+<option>Maths</option>
+<option>Chemistry</option>
+</optgroup>
+</select>
           </div>	</div>
-            						<div class="col-md-3 form-line">
-                          <div class="form-group" default="B.Tech/M.Tech">
-              <label for="sel1">B.Tech/M.Tech:</label>
-              <select class="form-control" id="sel1">
-                <option>Select</option>
-                <option>Computer Science and Engineering</option>
-                <option>Mechanical Engineering</option>
-                <option>Electrical Engineering</option>
-                <option>Civil Engineering</option>
-              </select>
-            </div>
-            				  		</div>
-                          <div class="col-md-3 form-line">
-                            <div class="form-group">
-                <label for="sel1">B.Sc/M.Sc:</label>
-                <select class="form-control" id="sel1">
-                  <option>Select</option>
-                  <option>Physics</option>
-                  <option>Biology</option>
-                  <option>Maths</option>
-                  <option>Chemistry</option>
-                </select>
-              </div>
-              				  			</div>
 
                               <div class="col-md-12 form-line">
                                 <h4>Photo</h4>
-                              <input type="file" name="" >
+                                <input type="file" name="fileToUpload" id="fileToUpload" required>
+                                <p>Upload passport size photograph in ".jpg" format. Max file size is 2MB </p>
                               </div>
             <div class="col-md-12 form-line">
             <input type="submit" name="submit" value="Register" class="center-block btn btn-primary">
@@ -1498,11 +1492,11 @@ function topFunction() {
     <script src="main3.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
 <script>
- 
-//   var delayMillis = 100000; 
+
+//   var delayMillis = 100000;
 
 // setTimeout(function() {
- 
+
 // }, delayMillis);
   $(window).load(function() {
     // Animate loader off screen
