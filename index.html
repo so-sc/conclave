@@ -83,7 +83,7 @@ sup {
 
                 <!-- logo -->
                 <div class="site-branding">
-                    <a class="logo" href="index.html">
+                    <a class="logo" href="/">
 
                         <!-- logo image  -->
                       <!-- <div class="main-logo">
@@ -116,7 +116,7 @@ sup {
                     <li><a data-scroll href="#speakers">Speakers</a></li>
                     <li><a data-scroll href="#schedules">Schedule</a></li>
                     <li><a data-scroll href="#partner">Sponsors</a></li>
-                    <li><a href="assets/downloads/abc.pdf" onclick="window.open(this.href); return false;" onkeypress="window.open(this.href); return false;">Brochure</a></li>
+                    <li><a href="assets/downloads/conclave.pdf" onclick="window.open(this.href); return false;" onkeypress="window.open(this.href); return false;">Brochure</a></li>
                     <!-- <li><a data-scroll href="#Team">Patrons</a></li> -->
 
                   <!--  <li><a data-scroll href="#photos">Photos</a></li> -->
@@ -291,7 +291,7 @@ sup {
 
 
               <h4>Prof. Harald Zur Hausen</h4>
-              <p>Nobel Prize in Physiology or Medicine<br>2008</p>
+              <p>Nobel Prize in Physiology/Medicine<br>2008</p>
           </div>
             </div>
             <div class="col-sm-2"></div>
@@ -1214,7 +1214,7 @@ Technology, Kanpur and Ph.D. in Materials Engineering from State University of N
     </section>
 
 
-
+<!--
     <section id="photos" class="section photos" hidden>
         <div class="container">
             <div class="row">
@@ -1266,7 +1266,7 @@ Technology, Kanpur and Ph.D. in Materials Engineering from State University of N
             </div>
         </div>
     </section>
-
+-->
 
 
 
@@ -1284,27 +1284,35 @@ Technology, Kanpur and Ph.D. in Materials Engineering from State University of N
             	<div class="col-md-6 form-line">
             	<div class="form-group">
             			  				<label for="exampleInputUsername">First Name</label>
-            					    	<input type="text" class="form-control" name="FirstName" placeholder=" First Name" required>
+                            <span class="error">* <?php echo $fnameErr;?></span>
+<br><br>
+            					    	<input type="text" class="form-control" name="FirstName" placeholder=" First Name" maxlength="20" required>
             				  		</div>	</div>
                           <div class="col-md-6 form-line">
               <div class="form-group">
                             <label for="exampleInputUsername">Last Name</label>
-                            <input type="text" class="form-control" name="LastName" placeholder=" Last Name" required>
+                            <span class="error">* <?php echo $lnameErr;?></span>
+<br><br>
+                            <input type="text" class="form-control" name="LastName" placeholder=" Last Name" maxlength="20" required>
                           </div>  </div>
             	<!-- <div class="col-md-6 form-line">
             	<div class="form-group">
             		<label for="exampleInputUsername">Gender</label> -->
-                <div class="col-md-2 form-line"><h4>Gender</h4></div>
+                <div class="col-md-2 form-line"><h4>Gender*</h4>
+                                <span class="error"> <?php echo $genderErr;?></span>
+
+                </div>
+<br><br>
                     <div class="col-md-1 form-line">
                         <div class="form-group radio">
                             <label class="checkbox-inline">
-                                <input type="radio" value="male" name="gender">Male
+                                <input type="radio" value="male" name="gender" required>Male
                             </label>
                         </div>  </div>
                     <div class="col-md-3 form-line">
                         <div class="form-group radio">
                             <label class="checkbox-inline">
-                                <input type="radio" value="female" name="gender">Female
+                                <input type="radio" value="female" name="gender" required>Female
                             </label>
                         </div>  </div>
 
@@ -1312,43 +1320,53 @@ Technology, Kanpur and Ph.D. in Materials Engineering from State University of N
             						<div class="col-md-6 form-line">
             	<div class="form-group">
             			  				<label for="exampleInputUsername">Institution Name</label>
-            					    	<input type="text" class="form-control" name="org" placeholder=" Institution Name">
+                            <span class="error">* <?php echo $orgErr;?></span>
+<br><br>
+            					    	<input type="text" class="form-control" name="org" placeholder=" Institution Name" maxlength="100" required>
             				  		</div>	</div>
             <div class="col-md-12 form-line">
             	<div class="form-group">
             			  				<label for="exampleInputUsername">Address</label>
-            					    	<textarea type="text" class="form-control" name="address" placeholder="Address"></textarea>
+                            <span class="error">* <?php echo $addressErr;?></span>
+<br><br>
+            					    	<textarea type="text" class="form-control" name="address" placeholder="Address" maxlength="200" required></textarea>
             				  		</div>	</div>
             <div class="col-md-6 form-line">
             	<div class="form-group">
             			  				<label for="exampleInputUsername">Mobile No</label>
-            					    	<input type="text" class="form-control" name="mobile" placeholder="Mobile     No">
+                            <span class="error">* <?php echo $mobileErr;?></span>
+<br><br>
+            					    	<input type="text" class="form-control" name="mobile" placeholder="Mobile     No" maxlength="10" required>
             				  		</div>	</div>
             						<div class="col-md-6 form-line">
             	<div class="form-group">
             			  				<label for="exampleInputUsername">Email</label>
-            					    	<input type="text" class="form-control" name="email" placeholder="Email">
+                            <span class="error">* <?php echo $emailErr;?></span>
+<br><br>
+            					    	<input type="email" class="form-control" name="email" placeholder="Email" maxlength="50" required>
             				  		</div>	</div>
             						<div class="col-md-12 form-line">
             	<div class="form-group">
             			  				<label for="exampleInputUsername">Person to be contacted in emergency (Name, Relation & Mobile no.)</label>
-            					    	<textarea type="text" class="form-control" name="person" placeholder="Name, Relation, MobileNo"></textarea>
+            					    	<textarea type="text" class="form-control" name="person" placeholder="Name, Relation, MobileNo" maxlength="100"></textarea>
             				  		</div>	</div>
                           <div class="row">
-                            <label>Occupation:</label>
+                            <label>Occupation</label>
+                            <span class="error">* <?php echo $occupationErr;?></span>
+<br><br>
                           </div>
                           <div class="row">
             <div class="col-md-6 form-line">
 
             	<div class="form-group radio">
             			  				<label class="checkbox-inline">
-                  <input type="radio" value="teacher" name="occupation">Teacher
+                  <input type="radio" value="teacher" name="occupation" required>Teacher
                 </label>
             				  		</div>	</div>
             						<div class="col-md-6 form-line">
             	<div class="form-group radio">
             			  				<label class="checkbox-inline">
-                  <input type="radio" value="student" name="occupation">Student
+                  <input type="radio" value="student" name="occupation" required>Student
                 </label>
               </div>	</div></div>
                           <div class="dropdown">
@@ -1357,8 +1375,10 @@ Technology, Kanpur and Ph.D. in Materials Engineering from State University of N
                           </div>
             <div class="col-md-3 form-line">
             	<div class="form-group">
-            			  				<label>Course of study:
+            			  				<label>Course of study
                 </label>
+                <span class="error">* <?php echo $courseErr;?></span>
+<br><br>
             				  		</div>	</div>
                           <div class="col-md-3 form-line">
                             <div class="form-group">
@@ -1385,8 +1405,8 @@ Technology, Kanpur and Ph.D. in Materials Engineering from State University of N
           </div>	</div>
 
                               <div class="col-md-12 form-line">
-                                <h4>Photo</h4>
-                                <input type="file" name="fileToUpload" id="fileToUpload" required>
+                                <h4>Photo</h4>*
+                                <input type="file" name="fileToUpload" id="fileToUpload" accept="image/jpg" required>
                                 <p>Upload passport size photograph in ".jpg" format. Max file size is 2MB </p>
                               </div>
             <div class="col-md-12 form-line">
