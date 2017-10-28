@@ -438,7 +438,7 @@
     background-size: cover;
     background-position: 50% 50%;
     overflow: hidden;
-    
+
 }
 
 /*img {
@@ -551,8 +551,8 @@
   z-index: 0;
 }
 
-.site-header > figure:nth-child(1) { 
-    background-image: url('../images/backgrounds/1.jpg'); 
+.site-header > figure:nth-child(1) {
+    background-image: url('../images/backgrounds/1.jpg');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -598,7 +598,7 @@
 }
 
 
-@keyframes 
+@keyframes
 imageAnimation {  0% {
  animation-timing-function: ease-in;
  opacity: 0;
@@ -649,3 +649,14 @@ imageAnimation {  0% {
 #social_side_links li {
     margin: 0;
 }
+
+.footer {
+  position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      padding: 25PX;
+      background-color: rgb(2, 2, 2);
+      text-align: center;
+      COLOR: LIGHTCYAN;
+}z

@@ -45,7 +45,11 @@ p {
 ul li {
   font-weight: 700;
   margin-bottom: 10px;
+  /*here change*/
+  list-style: none;
 }
+
+
 
 .custom-list-icon, .list-arrow-right {
   list-style-type: none;
@@ -435,7 +439,7 @@ ul li {
  * 6.5 Section: Contribution
  */
 .contribution {
-  text-align: center;
+  /*text-align: center;*/
   color: #fff;
 }
 
@@ -616,4 +620,12 @@ ul li {
 }
 .navbar-right {
       margin-top: 17px;
+}
+
+.heavy{
+box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    background: rgba(76, 76, 88, 0.44);
+    padding-top: 9px;
+    padding-left: 9px; 
+    border-style: solid;
 }
