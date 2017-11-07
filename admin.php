@@ -11,14 +11,8 @@ $username = "chaman";
 $password = "concl@ve@s@hy@dri";
 $dbname = "sahyadriconclave";
 $mysqli = new mysqli($servername, $username, $password, $dbname);
-// if ($mysqli->connect_errno) {
-//     echo "Connectin to database failed: ".$mysqli->connect_error;
-//    exit();
-// }
 $sql = "SELECT * FROM form";
-// if(!$result = $mysqli->query($sql)){
-//     die('There was an error running the query [' . $mysqli->error . ']');
-// }
+$result = $mysqli->query($sql)
 ?>
 <table class="table">
   <thead>
@@ -63,13 +57,38 @@ while($row = $result->fetch_assoc()){
   echo "<td>".$row['status']."</td>";
   echo "</tr>";
 }
-/* free result set */
-$result->free();
-/* close connection */
-$mysqli->close();
 ?>
 </tbody>
 </table>
+<?php
+echo tempdir();
+$dir          = '/home/conclavesahyadri/public_html/uploads';
+$file_display = array(
+    'jpg'
+);
 
+if (file_exists($dir) == false) {
+    echo 'Directory \'', $dir, '\' not found!';
+} else {
+    $dir_contents = scandir($dir);
+
+    foreach ($dir_contents as $file) {
+        $file_type = strtolower(end(explode('.', $file)));
+
+        if ($file !== '.' && $file !== '..' && in_array($file_type, $file_display) == true) {
+            echo '<img src="', $dir, '/', $file, '" alt="', $file, '" />';
+        }
+    }
+}
+function tempdir() {
+    $tempfile=tempnam(sys_get_temp_dir(),'');
+    // you might want to reconsider this line when using this snippet.
+    // it "could" clash with an existing directory and this line will
+    // try to delete the existing one. Handle with caution.
+    if (file_exists($tempfile)) { unlink($tempfile); }
+    mkdir($tempfile);
+    if (is_dir($tempfile)) { return $tempfile; }
+}
+?>
 </body
 </html>

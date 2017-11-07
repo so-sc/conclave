@@ -62,7 +62,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $studyErr = "Course of study is required";
     //$study = null;
   } else {
-
+  
         $study = test_input($_POST["study"]);
 
   }
@@ -110,10 +110,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   // if everything is ok, try to upload file
   } else {
     if ($conn->query($sql) === TRUE) {
-
+        
         if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
-
-
+          
+          
 header("Location: http://sahyadri-conclave.com"); /* Redirect browser */
 echo "Registration successfull";
 exit();

@@ -2,7 +2,7 @@
 @import url(https://cdn.cloudcache.dk/materialize/0.95.3/css/materialize-fonts.css);
 
 body, h1 {
-	margin: 0;
+	margin: 0;	
 }
 body {
 	font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -85,7 +85,7 @@ a {
   text-align: right;
   float: right;
   font-size: 1.6rem;
-	line-height: 37px;
+	line-height: 37px;	
 	color: rgba(0,0,0,0.37);
 }
 .modal>.close:hover {

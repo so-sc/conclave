@@ -1,0 +1,662 @@
+#top-link-block.affix-top {
+    position: absolute; /* allows it to "slide" up into view */
+    bottom: -82px;
+    left: 10px;
+}
+#top-link-block.affix {
+    position: fixed; /* keeps it on the bottom once in view */
+    bottom: 18px;
+    left: 10px;
+}
+/*  07  - Schedules
+----------------------------------------------*/
+.schedules{}
+.schedules .section-header{
+    margin-bottom: 40px;
+}
+.schedules .schedule-tabs{
+    text-align: center;
+}
+.schedules .nav-tabs{
+    text-align: center;
+    border: 10px solid #fafafa;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.schedules .nav-tabs li{
+    margin: 0px;
+}
+.schedules .nav-tabs li a{
+    border: 1px solid #f0f0f0;
+    border-right: none;
+    border-radius: 0;
+    margin: 0px;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ff9822;
+    padding: 6px 30px;
+}
+.schedules .nav-tabs li:last-child a{
+    border-right: 1px solid #f0f0f0;
+}
+.schedules .nav-tabs li:last-child a:hover, .schedules .nav-tabs li:last-child a:focus{
+    border-right: 1px solid #65ac4c;
+}
+.schedules .nav-tabs li:last-child.active a{
+    border-right: 1px solid #ff9822;
+}
+.schedules .nav-tabs li a span{
+    font-size: 16px;
+    font-weight: 400;
+    color: #696969;
+    display: block;
+}
+.schedules .nav-tabs li a:hover, .schedules .nav-tabs li a:focus{
+    border: 1px solid #65ac4c;
+    border-right: none;
+    background-color: #65ac4c;
+    color: #fff;
+    margin: 0;
+}
+.schedules .nav-tabs li.active a{
+    border: 1px solid #ff9822;
+    border-right: none;
+    background-color: #ff9822;
+    color: #fff;
+    margin: 0;
+}
+.schedules .nav-tabs li a:hover span, .schedules .nav-tabs li a:focus span, .schedules .nav-tabs li.active a span{
+    color: #fff;
+}
+.schedules .nav-tabs h4{
+    font-size: 24px;
+    color: #ff9822;
+}
+.schedules .nav-tabs p{
+    font-size: 16px;
+    color: #696969;
+    margin: 0px;
+}
+.schedules .tab-content .schedule-table{
+    margin-bottom: 50px;
+}
+.schedules .tab-content table{
+    border: 10px solid #fafafa;
+    border-top: none;
+    min-width: 1140px;
+    overflow-X: auto;
+}
+.schedules .tab-content table .time{
+    width: 23%;
+}
+.schedules .tab-content table .session{
+    width: 40%;
+    text-align: center;
+}
+.schedules .tab-content table .speaker{
+    width: 22%;
+}
+.schedules .tab-content table .venue{
+    width: 15%;
+}
+.schedules .tab-content table th{
+    border: none;
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #65ac4c;
+    padding: 27px 30px;
+}
+.schedules .tab-content table tbody tr:hover{
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .12);
+}
+.schedules .tab-content table td{
+    border: none;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 16px;
+    line-height: 1;
+    color: #696969;
+    padding: 18px 30px;
+    -webkit-transition: .25s;
+    transition: .25s;
+}
+.schedules .tab-content table td:hover{
+    color: #ff9822;
+}
+.schedules .tab-content table td:first-child{
+    border-left: 1px solid #f0f0f0;
+}
+.schedules .tab-content table td:last-child{
+    border-right: 1px solid #f0f0f0;
+}
+.schedules .tab-content table td span{
+    margin-right: 8px;
+}
+.schedules .tab-content .schedule-button{
+    background-color: #65ac4c;
+    padding: 14px 37px;
+}
+.schedules .tab-content .schedule-button:hover{
+    background-color: #ff9822;
+}
+.schedules-two{
+    background-image: url(../../images/backgrounds/bg-schedules.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    overflow: hidden;
+}
+.schedules-two .section-header{
+    margin-bottom: 60px;
+}
+.schedules-two .section-header h3, .schedules-two .section-header p{
+    color: #fff;
+}
+.schedules-two .nav-tabs{
+    width: 19%;
+    float: left;
+    border: none !important;
+}
+.schedules-two .nav-tabs li{
+    margin-bottom: 10px;
+}
+.schedules-two .nav-tabs li a{
+    border: none;
+    background-color: #fff;
+    width: 200px;
+    padding: 6px 15px;
+    position: relative;
+}
+.schedules-two .nav-tabs li a:before{
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%) rotate(45deg);
+    transform: translateY(-50%) rotate(45deg);
+    height: 15px;
+    width: 15px;
+    background-color: #ff9822;
+    opacity: 0;
+}
+.schedules-two .nav-tabs li a:hover:before, .schedules-two .nav-tabs li.active a:before{
+    right: -7px;
+    opacity: 1;
+    -webkit-transition: .25s;
+    transition: .25s;
+    transition-delay: .1s;
+}
+.schedules-two .nav-tabs li a:hover, .schedules-two .nav-tabs li a:focus, .schedules-two .nav-tabs li.active a{
+    border: none;
+}
+.schedules-two .nav-tabs li a:hover, .schedules-two .nav-tabs li a:focus{
+    background-color: #ff9822;
+}
+.schedules-two .nav-tabs li:last-child a:hover, .schedules-two .nav-tabs li:last-child a:focus{
+    border: none;
+}
+.schedules-two .tab-content{
+    width: 81%;
+    float: left;
+}
+.schedules-two .tab-content .schedule-table, .schedules-two .tab-content table{
+    margin: 0px;
+}
+.schedules-two .tab-content table{
+    border: none;
+    min-width: 920px;
+}
+.schedules-two .tab-content table tbody tr{
+    -webkit-transition: .25s;
+    transition: .25s;
+}
+.schedules-two .tab-content table tbody tr:hover {
+    box-shadow: none;
+    background-color: #ff9822;
+}
+.schedules-two .tab-content table tbody tr:hover td{
+    color: #fff;
+}
+.schedules-two .tab-content table .session {
+    width: 44%;
+}
+.schedules-two .tab-content table td:first-child {
+    border-left: 1px solid #252525;
+}
+.schedules-two .tab-content table td{
+    border-bottom: 1px solid #252525;
+    padding: 27px 15px;
+}
+.schedules-two .tab-content table td:last-child {
+    border-right: 1px solid #252525;
+}
+.schedules-two .tab-content table td span{
+    margin-right: 5px;
+}
+.schedules-three{
+    background-color: #1b2431;
+}
+.schedules-three .section-header h3{
+    color: #fff;
+}
+.schedules-three .section-header p{
+    color: #aeaeae;
+}
+.schedules-three .nav-tabs{
+    border: none;
+}
+.schedules-three .nav-tabs li a{
+    border: 1px solid #313d4f;
+    border-right: none;
+    position: relative;
+    color: #fff;
+}
+.schedules-three .nav-tabs li a span{
+    color: #fff;
+}
+.schedules-three .nav-tabs li a:before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    height: 16px;
+    width: 16px;
+    background-color: #ff9822;
+    -webkit-transform: translateX(-50%) rotate(45deg);
+    transform: translateX(-50%) rotate(45deg);
+    opacity: 0;
+}
+.schedules-three .nav-tabs li.active a:before{
+    opacity: 1;
+    bottom: -8px;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+.schedules-three .nav-tabs li:last-child a{
+    border-right: 1px solid #313d4f;
+}
+.schedules-three .tab-content table{
+    border: none;
+}
+.schedules-three .tab-content .schedule-table{
+    margin: 0px;
+}
+.schedules-three .tab-content table th{
+    background-color: #313d4f;
+}
+.schedules-three .tab-content table td{
+    border-bottom: 1px solid #313d4f;
+}
+.schedules-three .tab-content table td:hover{
+    color: #aeaeae;
+}
+.schedules-three .tab-content table td:first-child{
+    border-left: 1px solid #313d4f;
+    position: relative;
+}
+.schedules-three .tab-content table td:first-child:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 4px;
+    background-color: #ff9822;
+    opacity: 0;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+.schedules-three .tab-content table tr:hover td{
+    color: #fff;
+}
+.schedules-three .tab-content table tr:hover td:first-child:before{
+    opacity: 1;
+}
+.schedules-three .tab-content table td:last-child{
+    border-right: 1px solid #313d4f;
+}
+.schedules-three .tab-content table tbody tr{
+    position: relative;
+}
+.schedules-three .tab-content table tbody tr:hover{
+    background-color: #313d4f;
+    border-left: 4px solid #ff9822;
+}
+.schedules-three .tab-content table tbody tr:before{
+    position: absolute;
+}
+.schedules .tab-content table td{
+    color: #696969;
+}
+.schedules-two .tab-content table td{
+    color: #aeaeae;
+}
+.schedules-three .tab-content table td{
+    color: #aeaeae;
+}
+.schedules-five .nav-tabs li a{
+    color: #92278f;
+}
+.schedules-five .nav-tabs li a:hover, .schedules-five .nav-tabs li a:focus, .schedules-five .nav-tabs li.active a{
+    background-color: #92278f;
+    border: 1px solid #92278f;
+    border-right: none;
+}
+.schedules-five .nav-tabs li:last-child a:hover, .schedules-five .nav-tabs li:last-child a:focus, .schedules-five .nav-tabs li:last-child.active a{
+    border-right: 1px solid #92278f;
+}
+.schedules-five .tab-content table th{
+    //background-color: #92278f;
+}
+.schedules-five .tab-content table td:hover{
+    color: #696969;
+}
+.schedules-five .tab-content .schedule-button{
+    background-color: #92278f;
+}
+.schedules-six .nav-tabs li a{
+    color: #e84b3a;
+}
+.schedules-six .nav-tabs li a:hover, .schedules-six .nav-tabs li a:focus, .schedules-six .nav-tabs li.active a{
+    background-color: #e84b3a;
+    border: 1px solid #e84b3a;
+    border-right: none;
+}
+.schedules-six .nav-tabs li:last-child a:hover, .schedules-six .nav-tabs li:last-child a:focus, .schedules-six .nav-tabs li:last-child.active a{
+    border-right: 1px solid #e84b3a;
+}
+.schedules-six .tab-content table th{
+    background-color: #f5b429;
+}
+.schedules-six .tab-content table td:hover{
+    color: #e84b3a;
+}
+.schedules-six .tab-content table td:nth-child(1) span{
+    color: #e84b3a;
+}
+.schedules-six .tab-content table td:nth-child(2) span{
+    color: #fc7f0c;
+}
+.schedules-six .tab-content table td:nth-child(3) span{
+    color: #f5b429;
+}
+.schedules-six .tab-content table td:nth-child(4) span{
+    color: #d50dad;
+}
+.schedules-six .tab-content .schedule-button{
+    background-color: #e84b3a;
+}
+.schedules-seven{
+    background-color: #fafafa;
+}
+.schedules-seven .section-header h3{
+    color: #e84b3a;
+}
+.schedules-seven .nav-tabs li a{
+    color: #e84b3a;
+}
+.schedules-seven .nav-tabs li a:hover, .schedules-seven .nav-tabs li a:focus, .schedules-seven .nav-tabs li.active a{
+    background-color: #e84b3a;
+    border: 1px solid #e84b3a;
+    border-right: none;
+}
+.schedules-seven .nav-tabs li:last-child a:hover, .schedules-seven .nav-tabs li:last-child a:focus, .schedules-seven .nav-tabs li:last-child.active a{
+    border-right: 1px solid #e84b3a;
+}
+.schedules-seven .tab-content table th{
+    background-color: #f0f0f0;
+    color: #e84b3a;
+}
+.schedules-seven .tab-content table{
+    border: 10px solid #f0f0f0;
+}
+.schedules-seven .tab-content table td:hover{
+    color: #e84b3a;
+}
+.schedules-seven .tab-content table td:nth-child(1) span{
+    color: #e84b3a;
+}
+.schedules-seven .tab-content table td:nth-child(2) span{
+    color: #fc7f0c;
+}
+.schedules-seven .tab-content table td:nth-child(3) span{
+    color: #f5b429;
+}
+.schedules-seven .tab-content table td:nth-child(4) span{
+    color: #d50dad;
+}
+.schedules-seven .tab-content .schedule-button{
+    background-color: #e84b3a;
+}
+
+
+.modal-content
+{
+ background-color:#FFEFD5 !important;
+    background-size: cover;
+    background-position: 50% 50%;
+    overflow: hidden;
+
+}
+
+/*img {
+    width: 100%;
+}
+*/
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #cecece; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+}
+
+#myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+/*    transition: .5s ease;
+*/}
+
+#topbtn{
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+.container1 {
+  position: relative;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(136, 193, 212, 0.58);;
+}
+
+.container1:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+    color: white;
+    text-transform: capitalize;
+    margin: 10px;
+    margin-top: 15px;
+/*  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+*/}
+.text a {
+    color: cyan;
+}
+
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url(../images/loader-64x/Preloader_3.gif) center no-repeat #fff;
+    transition: 1s ease;
+}
+
+
+
+.site-header > figure {
+  animation: imageAnimation 30s linear infinite 0s;
+  backface-visibility: hidden;
+  background-size: cover;
+  background-position: center center;
+  color: transparent;
+  height: 100%;
+  left: 0px;
+  opacity: 0;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  z-index: 0;
+}
+
+.site-header > figure:nth-child(1) {
+    background-image: url('../images/backgrounds/1.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+.site-header > figure:nth-child(2) {
+  animation-delay: 6s;
+  background-image: url('../images/backgrounds/2.jpg');
+  background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.site-header > figure:nth-child(3) {
+  animation-delay: 12s;
+  background-image: url('../images/backgrounds/3.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.site-header > figure:nth-child(4) {
+  animation-delay: 18s;
+  background-image: url('../images/backgrounds/4.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.site-header > figure:nth-child(5) {
+  animation-delay: 24s;
+  background-image: url('../images/backgrounds/5.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+@keyframes
+imageAnimation {  0% {
+ animation-timing-function: ease-in;
+ opacity: 0;
+}
+ 8% {
+ animation-timing-function: ease-out;
+ opacity: 0.7;
+}
+ 17% {
+ opacity: 0.7
+}
+ 25% {
+ opacity: 0
+}
+ 100% {
+ opacity: 0
+}
+}
+
+#about {
+    background: #ecf0f1;
+}
+
+/* Social Icons */
+#social_side_links {
+    position: fixed;
+  top: 50%;
+  right: 0;
+  padding: 0;
+  list-style: none;
+  z-index: 99;
+}
+
+#social_side_links li a {display: block;}
+
+#social_side_links li a img {
+    display: block;
+    max-width:40px;
+  padding: 10px;
+  -webkit-transition:  background .2s ease-in-out;
+  -moz-transition:  background .2s ease-in-out;
+  -o-transition:  background .2s ease-in-out;
+  transition:  background .2s ease-in-out;
+}
+
+#social_side_links li a:hover img {background: rgba(0, 0, 0, .2);}
+
+#social_side_links li {
+    margin: 0;
+}
+
+.footer {
+  position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      padding: 25PX;
+      background-color: rgb(2, 2, 2);
+      text-align: center;
+      COLOR: LIGHTCYAN;
+}z
