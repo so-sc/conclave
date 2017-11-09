@@ -124,7 +124,7 @@ figure{margin-bottom:0;}
     margin: 7px;
 }
 .heavy1{box-shadow:0 0 10px rgba(255, 255, 255, 1);background:rgba(255, 255, 255, 0.44);padding-top:9px;padding-left:9px;border-style:solid;}
-
+.temp-logo{display: block;}
 .site-branding .logo .mainhead{
     color: #fff;
     font-size: 20px;
@@ -140,4 +140,7 @@ figure{margin-bottom:0;}
 
 @media (max-width:928px){
   .site-branding .logo .main-logo{width: 65px;border-radius: 30px;margin: 7px;}
+}
+@media (max-width:1203px){
+  .temp-logo{display: none;}
 }
