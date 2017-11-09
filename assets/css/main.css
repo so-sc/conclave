@@ -118,6 +118,7 @@ figure{margin-bottom:0;}
 .navbar-right{margin-top:17px;}
 .heavy{box-shadow:0 0 10px rgba(0, 0, 0, 1);background:rgba(76, 76, 88, 0.44);padding-top:9px;padding-left:9px;border-style:solid;}
 .site-branding .logo .main-logo{
+  content:  url('../images/llss.jpg');
     width: 85px;
     border-radius: 45px;
     margin: 7px;
