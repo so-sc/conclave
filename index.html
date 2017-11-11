@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-108126124-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-108126124-1');
+</script>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -1164,45 +1174,58 @@ sup {
 
     <section id="partner" class="section partner">
         <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h3 class="section-title">Event Sponsors</h3>
-                </div>
+          <div class="row">
+            <div class="col-md-12">
+              <h3 class="section-title">Event Sponsors</h3>
             </div>
-
-            <h1> Will be Updating Soon </h1>
-          <!--  <div class="row">
-                <div class="col-sm-3">
-                    <a class="partner-box partner-box-1"></a>
-                </div>
-                <div class="col-sm-3">
-                    <a class="partner-box partner-box-2"></a>
-                </div>
-                <div class="col-sm-3">
-                    <a class="partner-box partner-box-3"></a>
-                </div>
-                <div class="col-sm-3">
-                    <a class="partner-box partner-box-4"></a>
-                </div>
-
+            <div class="arrange">
+            <div class="new-arr1">
+              <h4 class="spo">GOLD sponsors</h4>
+              <div id="slideshow">
+                <div><img src=""></div>
+                <div><img src=""></div>
+                <div><img src=""></div>
+              </div>
             </div>
-
-            <div class="row">
-                <div class="col-sm-3">
-                    <a class="partner-box partner-box-5"></a>
-                </div>
-                <div class="col-sm-3">
-                    <a class="partner-box partner-box-6"></a>
-                </div>
-                <div class="col-sm-3">
-                    <a class="partner-box partner-box-7"></a>
-                </div>
-                <div class="col-sm-3">
-                    <a class="partner-box partner-box-8"></a>
-                </div>
+            <div class="new-arr2">
+              <h4 class="spo">SILVER sponsors</h4>
+              <div id="slideshow">
+                <div><img src=""></div>
+                <div><img src=""></div>
+                <div><img src=""></div>
+              </div>
             </div>
-          -->
-          <br><br><br><br><br><br><br><br><br><br>
+            </div>
+            <div class="arrange">
+            <div class="new-arr1">
+              <h4 class="spo">KNOWLEDGE sponsors</h4>
+              <div id="slideshow">
+                <div><img src=""></div>
+                <div><img src=""></div>
+                <div><img src=""></div>
+              </div>
+            </div>
+            <div class="new-arr2">
+              <h4 class="spo">TECHNOLOGY sponsors</h4>
+              <div id="slideshow">
+                <div><img src=""></div>
+                <div><img src=""></div>
+                <div><img src=""></div>
+              </div>
+            </div>
+            </div>
+            <div class="arrange">
+              <div class="new-arr3">
+                <h4 class="spo">ASSOCIATE sponsors</h4>
+                <div id="slideshow">
+                  <div><img src=""></div>
+                  <div><img src=""></div>
+                  <div><img src=""></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
     </section>
 
     <section id="Team" class="section speakers" style="background: #f1f1f1;" hidden>
@@ -1789,6 +1812,17 @@ function topFunction() {
     <script src="main3.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
 <script>
+
+$("#slideshow > div:gt(0)").hide();
+
+setInterval(function() { 
+  $('#slideshow > div:first')
+    .fadeOut(1000)
+    .next()
+    .fadeIn(1000)
+    .end()
+    .appendTo('#slideshow');
+},  3000);
 
 //   var delayMillis = 100000;
 
