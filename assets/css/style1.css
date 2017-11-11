@@ -36,7 +36,7 @@
 .schedules-two .nav-tabs{width:19%;float:left;border:none !important;}
 .schedules-two .nav-tabs li{margin-bottom:10px;}
 .schedules-two .nav-tabs li a{border:none;background-color:#fff;width:200px;padding:6px 15px;position:relative;}
-.schedules-two .nav-tabs li a:before{content:"";position:relative;right:0;top:50%;-webkit-transform:translateY(-50%) rotate(45deg);transform:translateY(-50%) rotate(45deg);height:15px;width:15px;background-color:#ff9822;opacity:0;}
+.schedules-two .nav-tabs li a:before{content:"";position:absolute;right:0;top:50%;-webkit-transform:translateY(-50%) rotate(45deg);transform:translateY(-50%) rotate(45deg);height:15px;width:15px;background-color:#ff9822;opacity:0;}
 .schedules-two .nav-tabs li a:hover:before, .schedules-two .nav-tabs li.active a:before{right:-7px;opacity:1;-webkit-transition:.25s;transition:.25s;transition-delay:.1s;}
 .schedules-two .nav-tabs li a:hover, .schedules-two .nav-tabs li a:focus, .schedules-two .nav-tabs li.active a{border:none;}
 .schedules-two .nav-tabs li a:hover, .schedules-two .nav-tabs li a:focus{background-color:#ff9822;}
@@ -139,4 +139,4 @@ imageAnimation{0%{animation-timing-function:ease-in;opacity:0;}
 #social_side_links li a img{display:block;max-width:40px;padding:10px;-webkit-transition:background .2s ease-in-out;-moz-transition:background .2s ease-in-out;-o-transition:background .2s ease-in-out;transition:background .2s ease-in-out;}
 #social_side_links li a:hover img{background:rgba(0, 0, 0, .2);}
 #social_side_links li{margin:0;}
-.footer{position:relative;right:0;bottom:0;left:0;padding:25PX;background-color:rgb(2, 2, 2);text-align:center;COLOR:LIGHTCYAN;}z
+.footer{position:relative;right:0;bottom:0;left:0;padding:25PX;background-color:rgb(2, 2, 2);text-align:center;COLOR:LIGHTCYAN;}
